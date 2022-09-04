@@ -361,7 +361,7 @@ img.img-user {
     background: #FFFFFF;
     border: 1px solid #E4E4E4;
     border-radius: 6px;
-    background-image: url(04/images/Trash.svg);
+    background-image: url(../04/images/Trash.svg);
     background-repeat: no-repeat;
     background-position: 6px;
     outline: none;
