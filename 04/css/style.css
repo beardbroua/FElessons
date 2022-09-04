@@ -240,7 +240,7 @@ input::-webkit-calendar-picker-indicator {
     right: 0%;
     top: 29px;
     bottom: 0px;
-    background-image: url(/04/images/arrows.png);
+    background-image: url(/04/images/Arrows.png);
     background-repeat: no-repeat;
     background-position: 210px;
     background-size: 16px;
@@ -361,7 +361,7 @@ img.img-user {
     background: #FFFFFF;
     border: 1px solid #E4E4E4;
     border-radius: 6px;
-    background-image: url(/04/images/trash.svg);
+    background-image: url(/04/images/Trash.svg);
     background-repeat: no-repeat;
     background-position: 6px;
     outline: none;
