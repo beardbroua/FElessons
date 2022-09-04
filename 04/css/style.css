@@ -4,12 +4,23 @@ body {
     font-weight: 400;
     font-size: 15px;
     line-height: 22px;
-
-
     letter-spacing: -0.2px;
-
     color: #545454;
 
+}
+
+a {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+
+
+    text-align: center;
+    letter-spacing: -0.1px;
+
+    color: #007BFF;
 }
 
 h2 {
@@ -158,7 +169,11 @@ input {
     left: 0px;
     right: 0px;
     bottom: 0px;
-
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: -0.1px;
+    color: #969696
 }
 
 /*-----radio button------*/
@@ -256,4 +271,35 @@ input::-webkit-calendar-picker-indicator {
     right: 0%;
     top: 29px;
     bottom: 0px;
+}
+
+/* --------button sign up---------- */
+.sign-up {
+    position: absolute;
+    left: 6.32%;
+    right: 5.96%;
+    top: 70.34%;
+    bottom: 23.22%;
+    background: #007BFF;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+    color: #FFFFFF;
+}
+
+/* ------Terms and Policy------ */
+p.terms {
+    position: absolute;
+    left: 14.21%;
+    right: 13.86%;
+    top: 80.51%;
+    bottom: 13.39%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: -0.1px;
+    color: #969696;
+
 }
