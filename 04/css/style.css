@@ -29,7 +29,6 @@ h2 {
     left: 6.32%;
     right: 58.77%;
     top: calc(46% - 32px/2 - 244px);
-
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -244,6 +243,7 @@ input::-webkit-calendar-picker-indicator {
     background-image: url(/04/images/Arrows.png);
     background-repeat: no-repeat;
     background-position: 210px;
+background-size: 16px;
     outline: none;
     padding-left: 20px;
     font-size: 13px;
@@ -302,4 +302,76 @@ p.terms {
     letter-spacing: -0.1px;
     color: #969696;
 
+}
+
+/* ------------------block profile------------------- */
+
+img.img-user {
+    position: absolute;
+    left: 6.14%;
+    right: 79.82%;
+    top: 14.75%;
+    bottom: 71.69%;
+}
+
+.input-file {
+    position: absolute;
+    left: 23.68%;
+    right: 52.11%;
+    top: 16.61%;
+    bottom: 78.31%;
+}
+
+
+
+.file-upload {
+    position: absolute;
+    left: 23.68%;
+    right: 52.11%;
+    top: 16.61%;
+    bottom: 78.31%;
+    background: #FFFFFF;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+    background-image: url(/04/images/Photo\ Camera.svg);
+    background-repeat: no-repeat;
+    background-position: 110px;
+    outline: none;
+    font-size: 13px;
+
+}
+
+.file-upload input[type=file] {
+    opacity: 0;
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+    position: relative;
+    z-index: 3;
+    cursor: pointer;
+    height: 34px;
+    width: 130px;
+
+}
+
+.erase-button-field {
+    position: absolute;
+    left: 49.65%;
+    right: 45.09%;
+    top: 16.61%;
+    bottom: 78.31%;
+    background: #FFFFFF;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+    background-image: url(/04/images/Trash.svg);
+    background-repeat: no-repeat;
+    background-position: 6px;
+    outline: none;
+    font-size: 13px;
+    cursor: pointer !important;
+}
+.erase-button {
+    opacity: 0;
+    height: 30px;
+    width: 30px;
+    cursor: pointer !important;
+    
 }
