@@ -1,3 +1,17 @@
+body {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+
+
+    letter-spacing: -0.2px;
+
+    color: #545454;
+
+}
+
 h2 {
     position: absolute;
     height: 32px;
@@ -92,13 +106,7 @@ input {
     right: 0px;
     top: 0px;
 
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 22px;
-    letter-spacing: -0.2px;
-    color: #545454;
+
 }
 
 .input-email-account {
@@ -116,13 +124,7 @@ input {
     left: 0px;
     right: 0px;
     top: 0px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 22px;
-    letter-spacing: -0.2px;
-    color: #545454;
+
 }
 
 .input-first-name-account {
@@ -139,13 +141,7 @@ input {
     left: 0px;
     right: 0px;
     top: 0px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 22px;
-    letter-spacing: -0.2px;
-    color: #545454;
+
 }
 
 .input-last-name-account {
@@ -162,13 +158,7 @@ input {
     left: 0px;
     right: 0px;
     bottom: 0px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 18px;
-    letter-spacing: -0.1px;
-    color: #969696;
+
 }
 
 /*-----radio button------*/
@@ -188,13 +178,7 @@ input {
     right: 1.61%;
     top: calc(50% - 22px/2);
 
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 22px;
-    letter-spacing: -0.2px;
-    color: #545454;
+
 }
 
 .radio-female {
@@ -211,11 +195,65 @@ input {
     left: 35.9%;
     right: 2.56%;
     top: calc(50% - 22px/2);
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 22px;
-    letter-spacing: -0.2px;
-    color: #545454;
+
+}
+
+/* ---------------country, city ------------------ */
+.country-form {
+    position: absolute;
+    left: 6.32%;
+    right: 50.7%;
+    top: 55.59%;
+    bottom: 33.05%;
+}
+
+.label-input-country {
+    position: absolute;
+    height: 22px;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+
+}
+
+input::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
+
+.input-country {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 29px;
+    bottom: 0px;
+    background-image: url(/04/images/Arrows.png);
+    background-repeat: no-repeat;
+    background-position: 210px;
+    outline: none;
+    padding-left: 20px;
+    font-size: 13px;
+}
+
+.city-form {
+    position: absolute;
+    left: 51.05%;
+    right: 5.96%;
+    top: 55.59%;
+    bottom: 33.05%;
+}
+
+.label-input-city {
+    position: absolute;
+    height: 22px;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+}
+
+.input-city {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 29px;
+    bottom: 0px;
 }
