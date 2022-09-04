@@ -243,7 +243,7 @@ input::-webkit-calendar-picker-indicator {
     background-image: url(/04/images/Arrows.png);
     background-repeat: no-repeat;
     background-position: 210px;
-background-size: 16px;
+    background-size: 16px;
     outline: none;
     padding-left: 20px;
     font-size: 13px;
@@ -361,17 +361,67 @@ img.img-user {
     background: #FFFFFF;
     border: 1px solid #E4E4E4;
     border-radius: 6px;
-    background-image: url(/04/images/Trash.svg);
+    background-image: url(04/images/Trash.svg);
     background-repeat: no-repeat;
     background-position: 6px;
     outline: none;
     font-size: 13px;
     cursor: pointer !important;
 }
+
 .erase-button {
     opacity: 0;
     height: 30px;
     width: 30px;
     cursor: pointer !important;
-    
+
+}
+
+.profile-name {
+    position: absolute;
+    left: 6.14%;
+    right: 50.88%;
+    top: 31.69%;
+    bottom: 56.95%;
+}
+
+.label-name-profile {
+    position: absolute;
+    height: 22px;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+}
+
+.input-name-profile {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 29px;
+    bottom: 0px;
+}
+
+.profile-email {
+    position: absolute;
+    left: 50.88%;
+    right: 6.14%;
+    top: 31.69%;
+    bottom: 56.95%;
+}
+
+.label-email-profile {
+    position: absolute;
+    height: 22px;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+}
+
+.input-email-profile {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 29px;
+    bottom: 0px;
+
 }
