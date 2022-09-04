@@ -333,7 +333,7 @@ img.img-user {
     background: #FFFFFF;
     border: 1px solid #E4E4E4;
     border-radius: 6px;
-    background-image: url(/04/images/camera.svg);
+    background-image: url(../images/camera.svg);
     background-repeat: no-repeat;
     background-position: 110px;
     outline: none;
