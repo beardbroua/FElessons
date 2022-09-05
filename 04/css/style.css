@@ -376,6 +376,9 @@ img.img-user {
     cursor: pointer !important;
 
 }
+.erase {
+    opacity: 0;
+}
 
 .profile-name {
     position: absolute;
