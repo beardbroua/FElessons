@@ -11,7 +11,7 @@
 
 <body>
     <div class="form">
-        <form action="">
+        <form action="" id="create-account" method="post">
             <div class="accaunt">
                 <div class="accaunt-content">
                     <h2>Create an Account</h2>
@@ -19,35 +19,37 @@
                     <div class="first-name">
                         <label class="label-first-name-account" for="first-name-account">First Name</label>
                         <input class="input-first-name-account" id="first-name-account" name="first-name-account"
-                            type="text">
+                            type="text" value="">
                     </div>
                     <div class="last-name">
                         <label class="label-last-name-account" for="last-name-account">Last Name</label>
                         <input class="input-last-name-account" id="last-name-account" name="last-name-account"
-                            type="text">
+                            type="text" value="">
                     </div>
 
 
                     <div class="email-account">
                         <label class="label-email-account" for="email-account"> Email </label>
-                        <input class="input-email-account" type="email" id="email-account">
+                        <input class="input-email-account" type="email" id="email-account" name="email" value="">
                         <p class="email-bottom-text"> we'll always share your email whith anyone else.</p>
 
                     </div>
                     <div class="radio-button">
                         <div class="radio-male">
-                            <input class="input-radio-male" type="radio" id="choice1" name="sex" value="male" checked>
                             <label class="label-radio-male" for="choice1">Male</label>
+                            <input class="input-radio-male" type="radio" id="choice1" name="sex" value="male" checked>
+                            
                         </div>
                         <div class="radio-female">
-                            <input class="input-radio-female" type="radio" id="choice2" name="sex" value="female">
                             <label class="label-radio-female" for="choice2">Female</label>
+                            <input class="input-radio-female" type="radio" id="choice2" name="sex" value="female">
+                            
                         </div>
                     </div>
                     <div class="country-form">
 
                         <label class="label-input-country" for="input-country">Country</label>
-                        <input class="input-country" id="input-country" list="character" placeholder="Select">
+                        <input class="input-country" id="input-country" list="character" name="country-form" placeholder="Select" value="">
                         <datalist id="character">
                             <option value="Ukraine"></option>
                             <option value="Mordor"></option>
@@ -56,7 +58,7 @@
                     </div>
                     <div class="city-form">
                         <label class="label-input-city" for="input-city">City</label>
-                        <input class="input-city" id="input-city">
+                        <input class="input-city" id="input-city" name="city-form" value="">
                     </div>
 
                     <button class="sign-up" type="submit">Sign up</button>
@@ -67,12 +69,12 @@
     </div>
     <div class="profile">
         <div class="accaunt-content">
-            <form action="" method="post">
+            <form action="" method="post" id="profile-form">
                 <h2>Profile</h2>
                 <img class="img-user" src="./images/user.png" alt="black_scarry_user">
 
                 <div class="file-upload">
-                    <input type="file" id="usr-img-file-upload" name="file" accept="image/*">
+                    <input type="file" id="usr-img-file-upload" name="file" accept="image/*" value="">
 
                 </div>
                 <div class="erase-button-field">
@@ -84,16 +86,16 @@
                 </div>
                 <div class="profile-name">
                     <label class="label-name-profile" for="profile-name">Name</label>
-                    <input class="input-name-profile" id="profile-name" name="profile-name" type="text">
+                    <input class="input-name-profile" id="profile-name" name="profile-name" type="text" value="">
                 </div>
                 <div class="profile-email">
 
                     <label class="label-email-profile" for="email-profile"> Email </label>
-                    <input class="input-email-profile" type="email" id="email-profile">
+                    <input class="input-email-profile" type="email" name="email-profile" id="email-profile" value="">
                 </div>
                 <div class="profile-country">
                     <label class="label-input-profile-country" for="input-profile-country">Country</label>
-                    <input class="input-profile-country" id="input-profile-country" list="character" placeholder="Select">
+                    <input class="input-profile-country" id="input-profile-country" list="character" name="profile-country" placeholder="Select" value="">
                     <datalist id="character">
                         <option value="Ukraine"></option>
                         <option value="Mordor"></option>
@@ -103,19 +105,19 @@
                 <div class="profile-city">
                     <div class="profile-city-form">
                         <label class="profile-label-input-city" for="profile-input-city">City</label>
-                        <input class="profile-input-city" id="profile-input-city">
+                        <input class="profile-input-city" id="profile-input-city" name="profile-city" value="">
                     </div>
                 </div>
                 <div class="zip-code-form">
                     
                         <label class="profile-label-zip-code" for="profile-zip-code">Zip Code</label>
-                        <input class="profile-zip-code" id="profile-zip-code" type="number" name="zip-code">
+                        <input class="profile-zip-code" id="profile-zip-code" type="number" name="zip-code" value="">
                     
                 </div>
                 <div class="phone-form">
                     
                     <label class="profile-label-phone" for="profile-phone">Phone Number</label>
-                    <input class="profile-phone" id="profile-phone" type="tel" name="phone">
+                    <input class="profile-phone" id="profile-phone" type="tel" name="phone" value="">
                 
             </div>
             <button class="update-button" type="submit">Update</button>
