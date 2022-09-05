@@ -366,7 +366,7 @@ img.img-user {
     background-position: 6px;
     outline: none;
     font-size: 13px;
-    cursor: pointer !important;
+    /* cursor: pointer !important; */
 }
 
 .erase-button {
@@ -423,5 +423,124 @@ img.img-user {
     right: 0%;
     top: 29px;
     bottom: 0px;
+
+}
+
+.profile-country {
+    position: absolute;
+    left: 6.14%;
+    right: 50.88%;
+    top: 46.44%;
+    bottom: 42.2%;
+}
+
+.label-input-profile-country {
+    position: absolute;
+    height: 22px;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+}
+
+.input-profile-country {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 29px;
+    bottom: 0px;
+    background-image: url(../images/arrows.png);
+    background-repeat: no-repeat;
+    background-position: 210px;
+    background-size: 16px;
+    outline: none;
+    padding-left: 20px;
+    font-size: 13px;
+}
+
+.profile-city {
+    position: absolute;
+    left: 50.88%;
+    right: 6.14%;
+    top: 46.44%;
+    bottom: 42.2%;
+}
+
+.profile-label-input-city {
+    position: absolute;
+    height: 22px;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+}
+
+.profile-input-city {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 29px;
+    bottom: 0px;
+
+}
+
+.zip-code-form {
+    position: absolute;
+    left: 6.14%;
+    right: 50.88%;
+    top: 61.19%;
+    bottom: 27.46%;
+}
+
+.profile-label-zip-code {
+    position: absolute;
+    height: 22px;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+}
+
+.profile-zip-code {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 29px;
+    bottom: 0px;
+}
+
+.phone-form {
+    position: absolute;
+    left: 50.88%;
+    right: 6.14%;
+    top: 61.19%;
+    bottom: 27.46%;
+}
+
+.profile-label-phone {
+    position: absolute;
+    height: 22px;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+}
+
+.profile-phone {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 29px;
+    bottom: 0px;
+}
+
+.update-button {
+    position: absolute;
+    left: 6.14%;
+    right: 67.54%;
+    top: 75.93%;
+    bottom: 17.63%;
+    background: #007BFF;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+    text-align: center;
+    letter-spacing: -0.1px;
+    color: #FFFFFF;
 
 }
