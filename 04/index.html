@@ -11,7 +11,7 @@
 
 <body>
     <div class="form">
-        <form action="" id="create-account" method="post">
+        <form action="https://8.8.8.8:5050/index.php" id="create-account" method="post">
             <div class="accaunt">
                 <div class="accaunt-content">
                     <h2>Create an Account</h2>
@@ -38,18 +38,19 @@
                         <div class="radio-male">
                             <label class="label-radio-male" for="choice1">Male</label>
                             <input class="input-radio-male" type="radio" id="choice1" name="sex" value="male" checked>
-                            
+
                         </div>
                         <div class="radio-female">
                             <label class="label-radio-female" for="choice2">Female</label>
                             <input class="input-radio-female" type="radio" id="choice2" name="sex" value="female">
-                            
+
                         </div>
                     </div>
                     <div class="country-form">
 
                         <label class="label-input-country" for="input-country">Country</label>
-                        <input class="input-country" id="input-country" list="character" name="country-form" placeholder="Select" value="">
+                        <input class="input-country" id="input-country" list="character" name="country-form"
+                            placeholder="Select" value="">
                         <datalist id="character">
                             <option value="Ukraine"></option>
                             <option value="Mordor"></option>
@@ -65,23 +66,25 @@
                     <p class="terms">By clicking the 'Sign Up' button, you confirm that you accept our <br> <a
                             href="#">Terms of Use</a> and <a href="#">Privacy Policy</a> </p>
                 </div>
+            </div>
         </form>
     </div>
     <div class="profile">
         <div class="accaunt-content">
-            <form action="" method="post" id="profile-form">
+            <form action="https://8.8.8.8:5050/index.php" method="post" id="profile-form">
                 <h2>Profile</h2>
                 <img class="img-user" src="./images/user.png" alt="black_scarry_user">
 
                 <div class="file-upload">
-                    <input type="file" id="usr-img-file-upload" name="file" accept="image/*" value="">
+                    <input type="file" id="usr-img-file-upload" name="file" accept="image/*">
 
                 </div>
                 <div class="erase-button-field">
                     <button type="reset" class="erase-button">
 
-                        <input type="reset">
+
                     </button>
+                    <input type="reset">
 
                 </div>
                 <div class="profile-name">
@@ -95,8 +98,9 @@
                 </div>
                 <div class="profile-country">
                     <label class="label-input-profile-country" for="input-profile-country">Country</label>
-                    <input class="input-profile-country" id="input-profile-country" list="character" name="profile-country" placeholder="Select" value="">
-                    <datalist id="character">
+                    <input class="input-profile-country" id="input-profile-country" list="character"
+                        name="profile-country" placeholder="Select" value="">
+                    <datalist id="character-profile">
                         <option value="Ukraine"></option>
                         <option value="Mordor"></option>
                         <option value="Wonderland"></option>
@@ -109,18 +113,18 @@
                     </div>
                 </div>
                 <div class="zip-code-form">
-                    
-                        <label class="profile-label-zip-code" for="profile-zip-code">Zip Code</label>
-                        <input class="profile-zip-code" id="profile-zip-code" type="number" name="zip-code" value="">
-                    
+
+                    <label class="profile-label-zip-code" for="profile-zip-code">Zip Code</label>
+                    <input class="profile-zip-code" id="profile-zip-code" type="number" name="zip-code" value="">
+
                 </div>
                 <div class="phone-form">
-                    
+
                     <label class="profile-label-phone" for="profile-phone">Phone Number</label>
                     <input class="profile-phone" id="profile-phone" type="tel" name="phone" value="">
-                
-            </div>
-            <button class="update-button" type="submit">Update</button>
+
+                </div>
+                <button class="update-button" type="submit">Update</button>
 
 
             </form>
@@ -128,16 +132,6 @@
 
     </div>
 
-    </div>
-
-
-
-
-
-    
-
-    </div>
-    </div>
 </body>
 
 </html>
