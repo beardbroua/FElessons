@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans';
+    font-style: normal;
+    color: #070707;
+}
+
+.container {
+    max-width: 970px;
+    margin: 0px auto;
+
+
+}
+
+.container-header {
+    max-width: 970px;
+    height: 80px;
+    margin: 0px auto;
+    border-bottom: 1px solid #828282;
+}
+
+.main-menu {
+    max-width: 496px;
+    margin: 25px auto;
+}
+
+.main-menu li {
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.list li a {
+    text-decoration: none;
+    color: #828282;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 25px;
+    letter-spacing: 0.02em;
+}
+
+.list .home {
+
+    color: #070707;
+
+}
+
+.a-main-menu {
+    margin-right: 40px;
+}
+
+.a-main-menu-last {
+    margin: 0;
+}
+
+/* ----------first screen---------- */
+.container h1 {
+    margin: 12px 0 0 0;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 65px;
+    font-size: 1.5em;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    color: #070707;
+}
+
+.first-screen .container img {
+    margin: 50px 0 0 0;
+}
+
+/* ----------about me---------- */
+
+.about-me {
+    background-color: #F6F6F6;
+    overflow: hidden;
+    padding: 100px 0;
+
+}
+
+.about-me .container h2 {
+    margin: 0px auto 50px auto;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 46px;
+    text-align: center;
+}
+
+.about-me-text {
+    margin: 0px auto;
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #070707;
+}
+
+.about-me-p {
+    margin-top: 30px;
+}
+
+p {
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+}
+
+/* ----------skills------------ */
+.skills {
+    padding: 100px 0;
+}
+
+.skills-heading h2 {
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 46px;
+    text-align: center;
+    color: #070707;
+    margin-bottom: 20px;
+}
+
+.skills-heading p {
+    margin-bottom: 50px;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+
+}
+
+.produkt-content {
+    margin-right: 97px;
+    display: inline-block;
+
+}
+
+.last {
+    margin-right: 0;
+}
+
+img .ps, .ai,  {
+    margin-left: 45px;
+
+}
