@@ -10,6 +10,15 @@ body {
     color: #070707;
 }
 
+h2 {
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 46px;
+    text-align: center;
+    color: #070707;
+    margin-bottom: 20px;
+}
+
 .container {
     max-width: 970px;
     margin: 0px auto;
@@ -48,11 +57,11 @@ body {
     letter-spacing: 0.02em;
 }
 
-.list .home {
-
+.list li a:hover {
     color: #070707;
-
 }
+
+
 
 .a-main-menu {
     margin-right: 40px;
@@ -63,12 +72,15 @@ body {
 }
 
 /* ----------first screen---------- */
+.first-screen {
+    line-height: 0;
+}
+
 .container h1 {
     margin: 12px 0 0 0;
     font-weight: 700;
     font-size: 48px;
     line-height: 65px;
-    font-size: 1.5em;
     margin-block-start: 0;
     margin-block-end: 0;
     color: #070707;
@@ -119,14 +131,7 @@ p {
     padding: 100px 0;
 }
 
-.skills-heading h2 {
-    font-weight: 700;
-    font-size: 34px;
-    line-height: 46px;
-    text-align: center;
-    color: #070707;
-    margin-bottom: 20px;
-}
+
 
 .skills-heading p {
     margin-bottom: 50px;
@@ -136,17 +141,153 @@ p {
 
 }
 
+.produkt-list {
+    margin: 0 -0.5px;
+    line-height: 0;
+    font-size: 0;
+}
+
 .produkt-content {
     margin-right: 97px;
     display: inline-block;
 
 }
 
+
+
+.pr-icon {
+    margin-left: 45px;
+    margin-bottom: 25px;
+
+}
+
+.pr-icon-last {
+    margin-left: 57px;
+    margin-bottom: 25px;
+
+}
+
+.produkt-p {
+
+    /* margin-top: 25px; */
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #828282;
+}
+
+.hode {
+    visibility: hidden;
+}
+
+.rating {
+    margin-top: 61px;
+
+    font-size: 0;
+
+
+}
+
+.star {
+    margin-right: 10px;
+    width: 26px;
+    height: 26px;
+}
+
+
+
+/* -----portfolio---------- */
+
+.portfolio {
+    background-color: #F6F6F6;
+    padding: 100px 0;
+}
+
+.portfolio h2 {
+
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 46px;
+    text-align: center;
+    color: #070707;
+    margin-bottom: 50px;
+}
+
+.prtf-link {
+    margin: 40px auto 70px auto;
+    text-align: center;
+
+}
+
+.prtf-link a {
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #070707;
+}
+
+/* -------contacts-------- */
+.contacts {
+    padding: 100px 0;
+}
+
+.cont-welcome {
+    margin: 20px auto 60px auto;
+    text-align: center;
+}
+
+.send-message {
+    display: block;
+    border: none;
+    cursor: pointer;
+    margin: 0 auto;
+    padding: 10px 16px;
+    background: #070707;
+    border-radius: 22px;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+}
+.send-message:hover {
+    background-color: #828282;
+
+}
+
+.sn-icons {
+    display: block;
+    margin: 40px auto 60px auto;
+    text-align: center;
+}
+
+.social-icon {
+    margin-right: 50px;
+}
+
+.like-me-text {}
+
 .last {
     margin-right: 0;
 }
 
-img .ps, .ai,  {
-    margin-left: 45px;
+.like-me-text {
 
+    text-align: center;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #828282;
+}
+
+.like-me-text a {
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    text-decoration: none;
+    color: #828282;
 }
