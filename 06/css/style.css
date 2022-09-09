@@ -28,12 +28,11 @@ h2 {
 
 .container-header {
     max-width: 970px;
-    height: 80px;
     margin: 0px auto;
     border-bottom: 1px solid #828282;
 }
 
-.main-menu {
+.menu {
     max-width: 496px;
     margin: 25px auto;
 }
@@ -254,6 +253,7 @@ p {
     letter-spacing: 0.1em;
     color: #FFFFFF;
 }
+
 .send-message:hover {
     background-color: #828282;
 
