@@ -200,7 +200,8 @@ p {
 
 .portfolio {
     background-color: #F6F6F6;
-    padding: 100px 0;
+    padding: 100px 0 0 0;
+    overflow: hidden;
 }
 
 .portfolio h2 {
@@ -214,7 +215,7 @@ p {
 }
 
 .prtf-link {
-    margin: 40px auto 70px auto;
+    margin: 30px auto 70px auto;
     text-align: center;
 
 }
@@ -259,7 +260,7 @@ p {
 
 .sn-icons {
     display: block;
-    margin: 40px auto 60px auto;
+    margin: 30px auto 60px auto;
     text-align: center;
 }
 
