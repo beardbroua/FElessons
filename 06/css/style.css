@@ -168,7 +168,7 @@ p {
 
 .produkt-p {
 
-    /* margin-top: 25px; */
+    min-height: 38px;
     margin-left: auto;
     margin-right: auto;
     font-size: 14px;
@@ -178,9 +178,7 @@ p {
     color: #828282;
 }
 
-.hode {
-    visibility: hidden;
-}
+
 
 .rating {
     margin-top: 61px;
