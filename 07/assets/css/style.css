@@ -65,21 +65,24 @@ div {
 }
 
 .list_item {
+    display: flex;
     min-height: 45px;
 }
 
 .list_item span {
     font-size: 11px;
-    line-height: 13px;
     display: inline;
     margin-left: 13px;
+    padding-top: 1px;
 }
 
 input {
+    display: flex;
     margin: 12px 0 12px 14px;
 }
 
 label {
+    display: flex;
     margin: 11px 0 0 16px;
     min-width: 100%;
 
