@@ -31,7 +31,6 @@ h1 {
     margin: 0 auto;
     display: inline-block;
     margin-bottom: 70px;
-    max-height: 80px;
     width: 100%;
     text-align: center;
     font-size: 0;
@@ -39,6 +38,7 @@ h1 {
 
 .logo {
     display: inline-block;
+    vertical-align: middle;
     margin: 24px auto 24px 0;
 }
 
@@ -54,7 +54,7 @@ h1 {
 }
 
 .header-menu {
-    margin: 26px 198px 0 198px;
+    margin: 0 198px 0 198px;
     vertical-align: middle;
 }
 
@@ -81,7 +81,7 @@ h1 {
 }
 
 .header-buttons {
-    vertical-align: top;
+    vertical-align: middle;
     margin: 17px 0 17px 0;
     display: inline-block;
 }
@@ -148,15 +148,15 @@ h1 {
 
 .fs-left-side {
     display: inline-block;
-    vertical-align: top;
+    vertical-align: middle;
     max-width: 500px;
-    margin-top: 97px;
     margin-right: 56px;
     text-align: left;
 }
 
 .fs-right-side {
     display: inline-block;
+    vertical-align: middle;
 }
 
 .fs-left-side p {
@@ -181,6 +181,190 @@ h1 {
 .get-started:hover {
     border: 1px solid #BCD0E5;
     border-radius: 4px;
+    background-color: #FFFFFF;
+    color: #2F281E;
+}
+
+/* --------------Features-------------------- */
+.features {
+    margin-top: 99px;
+}
+
+.features-bg {
+
+    background-image: url(../images/features-bg.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.features-content {
+    display: inline-block;
+    text-align: center;
+}
+
+.features-heading {
+    display: inline-block;
+    text-align: center;
+    max-width: 539px;
+    margin-bottom: 30.77px;
+}
+
+.features-heading h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    color: #2F281E;
+}
+
+.cards-conteiner {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.card {
+    display: flex;
+    max-width: 270px;
+    flex-direction: column;
+    margin-right: 40px;
+    margin-bottom: 70px;
+    text-align: left;
+}
+
+.card:last-child {
+    margin: 0;
+}
+
+.card img,
+h3,
+p {
+    display: flex;
+}
+
+.card h3 {
+    margin: 30px 0 16px 0;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+    color: #2F281E;
+}
+
+.card p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #544837;
+}
+
+.sign-up-now {
+    margin-bottom: 74px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 13px 39.5px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #FF9900;
+    border: none;
+    border-radius: 4px;
+}
+
+.sign-up-now:hover {
+    border: 1px solid #BCD0E5;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #FFFFFF;
+    color: #2F281E;
+}
+
+/* ----------Footer------------ */
+footer {
+    border-top: 1px solid rgba(188, 208, 229, 0.496913);
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 70px auto;
+    line-height: normal;
+}
+
+.footer-content .logo {
+    display: flex;
+    margin: 0;
+    justify-content: left;
+    align-items: flex-start;
+}
+
+.footer-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.footer-content h3 {
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #2F281E;
+}
+
+.footer-menu a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 41px;
+    color: #544837;
+}
+
+.footer-menu a:hover {
+    color: #FF9900;
+}
+
+
+.footer-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 340px;
+}
+
+.footer-form h3 {
+    margin-bottom: 25px;
+}
+
+.footer-form-heading {
+    max-width: 280px;
+}
+
+.footer-form input {
+    width: 340px;
+    padding: 15px 118px 15px 10px;
+    border: 1px solid #BCD0E5;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #BCD0E5;
+}
+
+.footer-form button {
+    margin-top: 25px;
+    padding: 13px 39.5px;
+    background: #FF9900;
+    border: none;
+    border-radius: 4px;
+    color: #FFFFFF;
+}
+
+.footer-form button:hover {
+    border: 1px solid #BCD0E5;
+    border-radius: 4px;
+    cursor: pointer;
     background-color: #FFFFFF;
     color: #2F281E;
 }
