@@ -167,6 +167,7 @@ h1 {
 }
 
 .get-started {
+    font-weight: 700;
     font-size: 16px;
     line-height: 24px;
     padding: 13px 43.5px;
