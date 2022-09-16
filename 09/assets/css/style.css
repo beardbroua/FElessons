@@ -362,7 +362,12 @@ footer {
     background: #FF9900;
     border: none;
     border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
     color: #FFFFFF;
+
 }
 
 .footer-form button:hover {
