@@ -31,6 +31,7 @@ h1 {
     margin: 0 auto;
     display: inline-block;
     margin-bottom: 70px;
+    max-height: 80px;
     width: 100%;
     text-align: center;
     font-size: 0;
@@ -38,7 +39,6 @@ h1 {
 
 .logo {
     display: inline-block;
-    vertical-align: middle;
     margin: 24px auto 24px 0;
 }
 
@@ -54,7 +54,7 @@ h1 {
 }
 
 .header-menu {
-    margin: 0 198px 0 198px;
+    margin: 26px 198px 0 198px;
     vertical-align: middle;
 }
 
@@ -81,7 +81,7 @@ h1 {
 }
 
 .header-buttons {
-    vertical-align: middle;
+    vertical-align: top;
     margin: 17px 0 17px 0;
     display: inline-block;
 }
@@ -148,15 +148,15 @@ h1 {
 
 .fs-left-side {
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: top;
     max-width: 500px;
+    margin-top: 97px;
     margin-right: 56px;
     text-align: left;
 }
 
 .fs-right-side {
     display: inline-block;
-    vertical-align: middle;
 }
 
 .fs-left-side p {
