@@ -179,6 +179,7 @@ h1 {
 }
 
 .get-started:hover {
+    max-height: 50px;
     border: 1px solid #BCD0E5;
     border-radius: 4px;
     background-color: #FFFFFF;
@@ -272,6 +273,7 @@ p {
 }
 
 .sign-up-now:hover {
+    max-height: 50px;
     border: 1px solid #BCD0E5;
     border-radius: 4px;
     cursor: pointer;
