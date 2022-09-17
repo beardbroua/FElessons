@@ -195,7 +195,8 @@ h1 {
 .features-bg {
 
     background-image: url(../images/features-bg.png);
-    background-position: center;
+    background-repeat : no-repeat ;
+    background-position: center bottom;
     background-size: cover;
 }
 
