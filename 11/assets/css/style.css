@@ -96,23 +96,26 @@
 .header__menu-link_hovered:hover {
     color: #18B5DC;
 }
+
 .footer__menu-link_hovered:hover {
     color: #18B5DC;
 }
 
 .header__button {
     display: flex;
-
     padding: 10px 20px;
-
     font-weight: 600;
     font-size: 18px;
     line-height: 22px;
     text-transform: uppercase;
     color: #3C3C3C;
+    border: 1px solid #3C3C3C;
+    
 }
 
 .header__button_hovered:hover {
+    min-width: 130px;
+    min-height: 42px;
     background: #18B5DC;
     color: #FFFFFF;
     border: 1px solid #18B5DC;
@@ -298,15 +301,18 @@
     flex-direction: column;
     align-items: center;
 }
+
 .footer__social-container {
     display: flex;
     flex-direction: row;
     margin: 28px 0 40px 0;
 }
+
 .footer__social-item+.footer__social-item {
-margin-left: 10px;
+    margin-left: 10px;
 
 }
+
 .footer__twitter-icon_hovered {
     background: url(../images/footer-tw-hovered.png);
     width: 43px;
@@ -320,12 +326,14 @@ margin-left: 10px;
     height: 42px;
     display: block;
 }
+
 .footer__twitter-icon {
     background: url(../images/footer-tw.png);
     width: 43px;
     height: 42px;
     display: block;
 }
+
 .footer__fb-icon_hovered {
     background: url(../images/footer-facebook-hovered.png);
     width: 43px;
@@ -339,12 +347,14 @@ margin-left: 10px;
     height: 42px;
     display: block;
 }
+
 .footer__fb-icon {
     background: url(../images/footer-facebook.png);
     width: 43px;
     height: 42px;
     display: block;
 }
+
 .footer__instagram-icon_hovered {
     background: url(../images/footer-instagram-hovered.png);
     width: 43px;
@@ -358,12 +368,14 @@ margin-left: 10px;
     height: 42px;
     display: block;
 }
+
 .footer__instagram-icon {
     background: url(../images/footer-instagram.png);
     width: 43px;
     height: 42px;
     display: block;
 }
+
 .footer__linledin-icon_hovered {
     background: url(../images/footer-linkedin-hovered.png);
     width: 43px;
@@ -377,12 +389,14 @@ margin-left: 10px;
     height: 42px;
     display: block;
 }
+
 .footer__linledin-icon {
     background: url(../images/footer-linkedin.png);
     width: 43px;
     height: 42px;
     display: block;
 }
+
 .footer__telegram-icon_hovered {
     background: url(../images/footer-telegram-hovered.png);
     width: 43px;
@@ -396,6 +410,7 @@ margin-left: 10px;
     height: 42px;
     display: block;
 }
+
 .footer__telegram-icon {
     background: url(../images/footer-telegram.png);
     width: 43px;
