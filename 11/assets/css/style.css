@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    transition: all .01s ease-in;
+    
 
 }
 
@@ -26,6 +26,7 @@
     padding: 10px;
     justify-content: center;
     align-items: center;
+    border-bottom: 1px solid #BDBDBD;
 }
 
 
@@ -169,6 +170,7 @@
 
     min-width: 270px;
     min-height: 270px;
+    transition: all .01s ease-in;
 }
 
 
