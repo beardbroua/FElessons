@@ -34,24 +34,26 @@
 
 }
 
-.conteiner {
-    margin: 0px auto;
-    max-width: 1200px;
-    display: flex;
-    max-width: 1200px;
 
-}
 
 .header__container {
-    margin: 0px auto;
-    max-width: 1200px;
+    
     display: flex;
-    left: 0;
-    right: 0;
     justify-items: center;
     align-items: center;
     justify-content: space-between;
     padding: 15px 0;
+}
+.container {
+    margin: 0px auto;
+    max-width: 1200px;
+    display: flex;
+   
+
+
+}
+.main__container {
+   
 }
 
 .main__header-lang-breadcrumbs-wrapper {
@@ -101,15 +103,15 @@
 /* -------------sidebar------------------ */
 
 
-.main {
+/* .main {
     padding-top: 150px;
     max-width: 1200px;
     margin: 0 auto;
-}
+    display: flex;
+    align-items: center;
+} */
 
-.main__conteiner {
-    max-width: 1200px;
-}
+
 
 .main__aside {
     position: sticky;
