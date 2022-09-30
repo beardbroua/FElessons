@@ -169,10 +169,13 @@
     font-size: 20px;
     line-height: 30px;
     letter-spacing: 0.04em;
+
     color: #000000;
 }
 
-
+.main__main-section {
+    width: 64%;
+}
 
 .main__text-block-link {
     color: var(--black);
