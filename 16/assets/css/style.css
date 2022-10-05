@@ -1,0 +1,196 @@
+html {
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: #333333;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 121px auto 122px auto;
+}
+
+.main__heading-text {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #898F8F;
+}
+.main__heading-title {
+  margin-bottom: 40px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 66px;
+  text-transform: uppercase;
+  color: #FFCC00;
+}
+.main__divider {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 450px;
+}
+.main__divider-line {
+  width: 210px;
+  height: 1px;
+  border: none;
+  background-color: #FFCC00;
+}
+
+.main__slider-wrapper {
+  margin-top: 41px;
+  width: 1030px;
+  height: 560px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.main__slider-photo-block {
+  padding: 65px 0;
+  width: 49.9%;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-right: 1px solid #FFCC00;
+}
+.main__photo-wrapper {
+  position: relative;
+}
+.main__slider-photo-angle {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border: none;
+  border-color: #FFCC00;
+}
+.main__slider-photo-angle_1 {
+  top: -15px;
+  left: -15px;
+  border-top: 1px solid #FFCC00;
+  border-left: 1px solid #FFCC00;
+}
+.main__slider-photo-angle_2 {
+  top: -15px;
+  right: -15px;
+  border-top: 1px solid #FFCC00;
+  border-right: 1px solid #FFCC00;
+}
+.main__slider-photo-angle_3 {
+  bottom: -15px;
+  right: -15px;
+  border-bottom: 1px solid #FFCC00;
+  border-right: 1px solid #FFCC00;
+}
+.main__slider-photo-angle_4 {
+  bottom: -15px;
+  left: -15px;
+  border-bottom: 1px solid #FFCC00;
+  border-left: 1px solid #FFCC00;
+}
+
+.main__description-block {
+  width: 50%;
+}
+.main__description-block-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 85px;
+}
+.main__slider-description-name {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #666666;
+}
+.main__slider-description-divider {
+  margin: 30px auto;
+  width: 100px;
+  border: none;
+  border-bottom: 1px solid #FFCC00;
+}
+.main__slider-description-job-title {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #666666;
+}
+.main__slider-description-social-block {
+  display: flex;
+  flex-direction: row;
+}
+.main__slider-description-social-list {
+  margin: 30px 0 49px 0;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  width: 135px;
+}
+.main__slider-description-social-item {
+  width: 30px;
+  height: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #cccccc;
+  border-radius: 50%;
+}
+.main__slider-description-social-item + .main__slider-description-social-item {
+  margin-left: 5px;
+}
+.main__slider-description-social-icon {
+  fill: #cccccc;
+  max-height: 12px;
+}
+.main__slider-description-text {
+  max-width: 430px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+}
+.main__slider-description-slider-divider {
+  width: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.main__slider-divider {
+  margin: 20px auto;
+  width: 20px;
+  height: 4px;
+  border: none;
+  background-color: #FFCC00;
+}
+.main__slider-divider_small {
+  width: 10px;
+}
+.main__slider-description-button {
+  padding: 5px 10px;
+  border: 1px solid #FFCC00;
+}
+.main__slider-description-button-link {
+  font-family: "Open Sans";
+  font-style: normal;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #666666;
+}/*# sourceMappingURL=style.css.map */

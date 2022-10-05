@@ -1,0 +1,68 @@
+.main {
+    &__slider-wrapper {
+        margin-top: 41px;
+        width: 1030px;
+        height: 560px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        
+       
+
+
+
+    }
+
+    &__slider-photo-block {
+        padding: 65px 0;
+        width: 49.9%;
+        display: flex;
+        align-items: center;
+        border: none;
+        border-right: $angleBorder;
+    }
+
+
+    &__photo-wrapper {
+        position: relative;
+
+    }
+
+
+&__slider-photo-angle {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: none;
+    border-color: $orange;
+
+    &_1 {
+        top: -15px;
+        left: -15px;
+        border-top: $angleBorder;
+        border-left: $angleBorder;
+    }
+
+    &_2 {
+        top: -15px;
+        right: -15px;
+        border-top: $angleBorder;
+        border-right: $angleBorder;
+    }
+
+    &_3 {
+        bottom: -15px;
+        right: -15px;
+        border-bottom: $angleBorder;
+        border-right: $angleBorder;
+    }
+
+    &_4 {
+        bottom: -15px;
+        left: -15px;
+        border-bottom: $angleBorder;
+        border-left: $angleBorder;
+    }
+
+}
+}

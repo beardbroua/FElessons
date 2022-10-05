@@ -1,0 +1,53 @@
+ .main {
+  
+    &__heading {
+        
+        &-text {
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 24px;
+            text-transform: uppercase;
+            color: $grey ;
+        }
+
+
+        &-title {
+            // margin-top: 15px;
+            margin-bottom: 40px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 60px;
+            line-height: 66px;
+            text-transform: uppercase;
+            color: $orange;
+        }
+    }
+
+
+    &__divider {
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+
+        align-items: center;
+        max-width: 450px;
+
+        &-line {
+            width: 210px;
+            height: 1px;
+            border: none;
+background-color: $orange;
+            
+            
+        }
+    }
+ }
+    
+
+
+
+
+

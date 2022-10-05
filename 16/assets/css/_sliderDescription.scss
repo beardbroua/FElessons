@@ -1,0 +1,136 @@
+.main {
+
+
+
+    &__description-block {
+        width: 50%;
+
+    }
+
+    &__description-block-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 85px;
+    }
+
+    &__slider-description-name {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+        text-transform: capitalize;
+        color: $darkgrey;
+    }
+
+    &__slider-description-divider {
+        margin: 30px auto;
+        width: 100px;
+        border: none;
+        border-bottom: $angleBorder;
+    }
+
+    &__slider-description-job-title {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 36px;
+        text-align: center;
+        text-transform: capitalize;
+        color: $darkgrey;
+    }
+
+
+
+
+    &__slider-description-social-block {
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__slider-description-social-list {
+        margin: 30px 0 49px 0;
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        width: 135px;
+
+
+
+    }
+
+    &__slider-description-social-item {
+        width: 30px;
+        height: 30px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid #cccccc;
+        border-radius: 50%;
+
+
+    }
+    &__slider-description-social-item+&__slider-description-social-item {
+        margin-left: 5px;
+    }
+
+    &__slider-description-social-icon {
+        fill: #cccccc;
+        max-height: 12px;
+    }
+
+
+
+
+
+    &__slider-description-text {
+        max-width: 430px;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    &__slider-description-slider-divider {
+        width: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__slider-divider {
+        margin: 20px auto;
+        width: 20px;
+        height: 4px;
+        border: none;
+        background-color: $orange;
+
+        &_small {
+            width: 10px;
+        }
+    }
+
+
+
+    &__slider-description-button {
+        padding: 5px 10px;
+        border: $angleBorder;
+
+
+    }
+
+    &__slider-description-button-link {
+        font-family: 'Open Sans';
+        font-style: normal;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 14px;
+        text-transform: uppercase;
+        color: $darkgrey;
+    }
+}
