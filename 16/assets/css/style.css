@@ -42,6 +42,9 @@ html {
   border: none;
   background-color: #FFCC00;
 }
+.main__divider-img {
+  margin: 0 6.25px;
+}
 
 .main__slider-wrapper {
   margin-top: 41px;
