@@ -159,6 +159,9 @@ html {
   fill: #cccccc;
   max-height: 12px;
 }
+.main__slider-description-social-link {
+  display: inline-flex;
+}
 .main__slider-description-text {
   max-width: 430px;
   font-family: "Raleway";
