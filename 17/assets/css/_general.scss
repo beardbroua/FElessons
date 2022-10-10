@@ -1,0 +1,29 @@
+html {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 166%;
+    color: $mainColor;
+}
+* {
+    box-sizing: border-box;
+}
+
+
+
+
+@media screen and (max-width: 1250px) {
+    .container {
+        margin: 0 20px;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+       
+        margin: 0 34px;
+    }
+
+}

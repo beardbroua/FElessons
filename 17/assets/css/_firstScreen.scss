@@ -1,0 +1,51 @@
+.first-screen {
+    margin: 0 auto 90px auto;
+    width: 100%;
+    height: 600px;
+    padding-top: 100px;
+    background-image: url(../images/bg-image.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+
+    &__title-block {
+
+
+
+        @extend %container;
+
+        &-wrapper {
+            max-width: 770px;
+            @media screen and (max-width:900px) {
+                max-width: 600px;
+
+            }
+        }
+
+        &-title {
+            font-family: 'Red Hat Display';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 48px;
+            line-height: 64px;
+            letter-spacing: 0.05em;
+            color: $black;
+
+
+            @media screen and (max-width:900px) {
+                font-size: 36px;
+                line-height: 50px;
+
+
+            }
+
+            @media screen and (max-width:350px) {
+                font-size: 30px;
+                line-height: 50px;
+
+            }
+        }
+    }
+
+}
