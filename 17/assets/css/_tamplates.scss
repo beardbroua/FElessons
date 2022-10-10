@@ -1,8 +1,9 @@
 %container {
     max-width: 1140px;
     margin: 0 auto;
+
     @media screen and (max-width:1200px) {
-       
+
         margin: 0 34px;
     }
 
@@ -10,9 +11,19 @@
         max-width: 800px;
         margin: 0 34px;
     }
+
     @media screen and (max-width:350px) {
         max-width: 330px;
         margin: 0 10px;
     }
 }
- 
+
+%h3 {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 166%;
+    letter-spacing: 0.1em;
+    color: #000000;
+}

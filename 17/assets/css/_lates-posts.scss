@@ -1,0 +1,30 @@
+.lates-posts {
+    margin-bottom: 50px;
+
+    &__heading {
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        @extend %container;
+        @media screen and ( max-width:600px){
+            display:block;
+            
+        }
+
+        &-title {
+            @extend %h3;
+        }
+
+        &-link-svg {
+            fill: #7B7B7B;
+            ;
+        }
+
+        &-link-svg:hover {
+            fill: #000000;
+        }
+    }
+
+}
