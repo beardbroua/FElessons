@@ -1,5 +1,6 @@
 .most-popular {
     @extend %container;
+    margin-bottom: 30px;
 
     &__heading {
         display: flex;
@@ -175,20 +176,20 @@
         }
 
         &-info {
-            display: grid;
-            grid-template-areas: "title text-1"
-                "title text-2";
+            display: flex;
+            justify-content: space-between;
 
-                @media screen and (max-width:900px) {
-                    grid-template-areas: "title" "text-1" "text-2";
+            @media screen and (max-width:900px) {
+                flex-direction: column;
 
-                }
+            }
 
             &-title {
                 max-width: 470px;
-                grid-area: title;
+
                 font-family: 'Red Hat Display';
                 font-style: normal;
+
                 font-weight: 400;
                 font-size: 23px;
                 line-height: 166%;
@@ -207,19 +208,31 @@
                 max-width: 470px;
                 justify-self: end;
                 font-family: 'Lato';
+                align-self: end;
                 font-style: normal;
                 font-weight: 400;
                 font-size: 19px;
                 line-height: 32px;
                 letter-spacing: 0.05em;
                 color: #565656;
-                margin-bottom: 50px;
+                margin-bottom: 40px;
+                @media screen and (max-width:900px) {
+                    text-align: right;
+                    max-width: 600px;
+
+                }
+                @media screen and (max-width:600px) {
+                    text-align: left;
+                    
+
+                }
+
 
                 @media screen and (max-width:600px) {
                     font-weight: 400;
                     font-size: 18px;
                     margin-bottom: 30px;
-                    
+
 
                 }
 
@@ -227,4 +240,50 @@
             }
         }
     }
+
+    &__link {
+        
+        display: none;
+        text-decoration: none;
+        margin-right: 10px;
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 166.3%;
+        letter-spacing: 0.1em;
+        color: #000000;
+        &-wrapper {
+            display: flex;
+            align-items: center;
+        }
+    }
+    &__title-wrapper{
+        @media screen and (max-width:900px) {
+            margin-bottom: 40px;
+            
+        }
+    }
+    &__title-wrapper:hover &__link {
+        display: inline-block;
+
+    }
+    &__svg {
+        fill: #7B7B7B;
+    }
+    &__title-wrapper:hover &__svg {
+        fill: #000000;
+
+    }
+    &__wrapper-info-title + &__wrapper-info-title {
+        margin-bottom: 20px;
+    }
+    &__text-wrapper {
+        display: flex;
+        flex-direction: column;
+        @media screen and (max-width:900px) {
+            justify-content: flex-end;
+            
+        }
+    }  
 }

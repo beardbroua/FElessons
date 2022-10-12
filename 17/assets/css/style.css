@@ -486,6 +486,9 @@ html {
   }
 }
 
+.most-popular {
+  margin-bottom: 30px;
+}
 .most-popular__heading {
   display: flex;
   align-items: center;
@@ -630,17 +633,16 @@ html {
   background-color: #323232;
 }
 .most-popular__wrapper-info {
-  display: grid;
-  grid-template-areas: "title text-1" "title text-2";
+  display: flex;
+  justify-content: space-between;
 }
 @media screen and (max-width: 900px) {
   .most-popular__wrapper-info {
-    grid-template-areas: "title" "text-1" "text-2";
+    flex-direction: column;
   }
 }
 .most-popular__wrapper-info-title {
   max-width: 470px;
-  grid-area: title;
   font-family: "Red Hat Display";
   font-style: normal;
   font-weight: 400;
@@ -660,18 +662,72 @@ html {
   max-width: 470px;
   justify-self: end;
   font-family: "Lato";
+  align-self: end;
   font-style: normal;
   font-weight: 400;
   font-size: 19px;
   line-height: 32px;
   letter-spacing: 0.05em;
   color: #565656;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 900px) {
+  .most-popular__wrapper-info-text {
+    text-align: right;
+    max-width: 600px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .most-popular__wrapper-info-text {
+    text-align: left;
+  }
 }
 @media screen and (max-width: 600px) {
   .most-popular__wrapper-info-text {
     font-weight: 400;
     font-size: 18px;
     margin-bottom: 30px;
+  }
+}
+.most-popular__link {
+  display: none;
+  text-decoration: none;
+  margin-right: 10px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 166.3%;
+  letter-spacing: 0.1em;
+  color: #000000;
+}
+.most-popular__link-wrapper {
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 900px) {
+  .most-popular__title-wrapper {
+    margin-bottom: 40px;
+  }
+}
+.most-popular__title-wrapper:hover .most-popular__link {
+  display: inline-block;
+}
+.most-popular__svg {
+  fill: #7B7B7B;
+}
+.most-popular__title-wrapper:hover .most-popular__svg {
+  fill: #000000;
+}
+.most-popular__wrapper-info-title + .most-popular__wrapper-info-title {
+  margin-bottom: 20px;
+}
+.most-popular__text-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 900px) {
+  .most-popular__text-wrapper {
+    justify-content: flex-end;
   }
 }/*# sourceMappingURL=style.css.map */
