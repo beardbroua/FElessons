@@ -21,23 +21,23 @@ html {
     margin: 0 34px;
   }
 }
-.most-popular, .lates-posts__wrapper, .lates-posts, .blog, .first-screen__title-block, .header {
+.footer__left-right-wrapper, .most-popular, .lates-posts__wrapper, .lates-posts, .blog, .first-screen__title-block, .header {
   max-width: 1140px;
   margin: 0 auto;
 }
 @media screen and (max-width: 1200px) {
-  .most-popular, .lates-posts__wrapper, .lates-posts, .blog, .first-screen__title-block, .header {
+  .footer__left-right-wrapper, .most-popular, .lates-posts__wrapper, .lates-posts, .blog, .first-screen__title-block, .header {
     margin: 0 34px;
   }
 }
 @media screen and (max-width: 900px) {
-  .most-popular, .lates-posts__wrapper, .lates-posts, .blog, .first-screen__title-block, .header {
+  .footer__left-right-wrapper, .most-popular, .lates-posts__wrapper, .lates-posts, .blog, .first-screen__title-block, .header {
     max-width: 800px;
     margin: 0 34px;
   }
 }
 @media screen and (max-width: 350px) {
-  .most-popular, .lates-posts__wrapper, .lates-posts, .blog, .first-screen__title-block, .header {
+  .footer__left-right-wrapper, .most-popular, .lates-posts__wrapper, .lates-posts, .blog, .first-screen__title-block, .header {
     max-width: 330px;
     margin: 0 10px;
   }
@@ -705,6 +705,11 @@ html {
   display: flex;
   align-items: center;
 }
+@media screen and (max-width: 600px) {
+  .most-popular__link-wrapper {
+    display: none;
+  }
+}
 @media screen and (max-width: 900px) {
   .most-popular__title-wrapper {
     margin-bottom: 40px;
@@ -729,5 +734,124 @@ html {
 @media screen and (max-width: 900px) {
   .most-popular__text-wrapper {
     justify-content: flex-end;
+  }
+}
+
+.footer {
+  background-color: #F4F4F4;
+  padding-top: 70px;
+}
+.footer__left-right-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 900px) {
+  .footer__left-right-wrapper {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.footer__left-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 900px) {
+  .footer__left-wrapper {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+}
+.footer__left-wrapper-title {
+  margin-bottom: 30px;
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 64px;
+  letter-spacing: 0.05em;
+  color: #000000;
+}
+@media screen and (max-width: 600px) {
+  .footer__left-wrapper-title {
+    font-size: 32px;
+    line-height: 42px;
+    letter-spacing: 0.05em;
+  }
+}
+.footer__left-wrapper-tel, .footer__left-wrapper-mail {
+  text-decoration: none;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 166%;
+  letter-spacing: 0.1em;
+  color: #000000;
+}
+@media screen and (max-width: 600px) {
+  .footer__left-wrapper-tel, .footer__left-wrapper-mail {
+    font-size: 18px;
+    line-height: 166%;
+  }
+}
+.footer__left-wrapper-tel {
+  margin-bottom: 15px;
+}
+.footer__right-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__social {
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+.footer__social-item {
+  max-height: 50px;
+  border: 1px solid #565656;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.footer__social-item:hover {
+  background-color: #565656;
+}
+.footer__social-item:hover .footer__social-svg {
+  fill: #ffffff;
+}
+.footer__social-link {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer__social-svg {
+  width: 24px;
+  height: 24px;
+  fill: #565656;
+  transition: 0.3s;
+}
+.footer__copyright {
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 166%;
+  letter-spacing: 0.1em;
+  color: #000000;
+}
+@media screen and (max-width: 600px) {
+  .footer__copyright {
+    font-size: 16px;
+    line-height: 166%;
+    text-align: center;
   }
 }/*# sourceMappingURL=style.css.map */

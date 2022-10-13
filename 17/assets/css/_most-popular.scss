@@ -256,6 +256,12 @@
         &-wrapper {
             display: flex;
             align-items: center;
+            @media screen and (max-width:600px) {
+               display: none;
+
+
+            }
+
         }
     }
     &__title-wrapper{
