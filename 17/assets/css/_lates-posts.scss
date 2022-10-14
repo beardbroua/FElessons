@@ -1,6 +1,10 @@
 .lates-posts {
+    margin-bottom: 90px;
     @extend %container;
+    @media screen and (max-width:900px) {
 
+        margin-bottom: 70px;
+     }
     &__heading {
 
         display: flex;
@@ -9,10 +13,11 @@
         flex-direction: row;
         margin-bottom: 50px;
 
-        
+       
 
         @media screen and (max-width:600px) {
             display: block;
+            margin-bottom: 30px;
 
         }
 
@@ -36,7 +41,7 @@
         grid-template-columns: repeat(3, 1fr);
         row-gap: 30px;
         column-gap: 25px;
-        @extend %container;
+        
 
         @media screen and (max-width:900px) {
             grid-template-rows: repeat(3, 1fr);

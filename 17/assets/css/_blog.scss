@@ -1,7 +1,10 @@
 .blog {
     margin-bottom: 90px;
     @extend %container;
+    @media screen and (max-width:900px) {
 
+        margin-bottom: 70px;
+     }
     &__title-wrapper {
         @media screen and (max-width:600px) {
 
@@ -19,6 +22,10 @@
             line-height: 64px;
             letter-spacing: 0.05em;
             color: #000000;
+            @media screen and (max-width:600px) {
+
+               margin: 0;
+             }
 
         }
     }
@@ -39,6 +46,13 @@
             row-gap: 0;
             column-gap: 0;
         }
+        @media screen and (max-width:500px) {
+
+          
+            row-gap: 37px;
+            
+        }
+
 
 
         &-img-block {
@@ -122,6 +136,7 @@
                         font-size: 22px;
                         line-height: 166%;
                         letter-spacing: 0.1em;
+                        max-width: 100%;
 
                     }
                 }
@@ -137,6 +152,11 @@
                     line-height: 166%;
                     letter-spacing: 0.1em;
                     color: #7B7B7B;
+                    @media screen and (max-width:900px) {
+                        margin-bottom: 40px;
+                       
+
+                    }
                 }
 
                 &-text {

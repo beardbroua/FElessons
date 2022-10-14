@@ -11,6 +11,7 @@
 
         @media screen and (max-width:600px) {
             display: block;
+            margin-bottom: 30px;
 
         }
 
@@ -256,17 +257,16 @@
         &-wrapper {
             display: flex;
             align-items: center;
-            @media screen and (max-width:600px) {
-               display: none;
-
-
-            }
-
+           
         }
     }
     &__title-wrapper{
         @media screen and (max-width:900px) {
             margin-bottom: 40px;
+            
+        }
+        @media screen and (max-width:600px) {
+            margin-bottom: 30px;
             
         }
     }
