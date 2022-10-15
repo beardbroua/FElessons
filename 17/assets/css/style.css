@@ -204,7 +204,7 @@ html {
 }
 @media screen and (max-width: 600px) {
   .blog__title-wrapper-title {
-    margin: 0;
+    margin-bottom: 20px;
   }
 }
 .blog__wrapper {
