@@ -1,0 +1,66 @@
+@mixin textMont ($fw: 500, $fs: 18px, $lh: 160px, $color: $mainColor ) {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $lh;
+    color: $mainColor;
+}
+
+@mixin textWSans ($fw: 700, $fs: 80px, $lh: 110px, $color: $titleColor ) {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $lh;
+    color: $titleColor;
+}
+
+@mixin _350-generalText {
+    font-size: 14px;
+    line-height: 150%;
+    margin-bottom: 10px;
+}
+@mixin _350-h2 {
+    font-size: 30px;
+    line-height: 140%;
+    margin-bottom: 20px;
+}
+
+// Using
+//.div {
+//   @include _1170 {
+//       @content;
+//   }
+//}
+//media_mixin.scss
+@mixin _1170 {
+    @media (max-width: 1170px){
+        @content;
+    }
+}
+@mixin _979 {
+    @media (max-width: 979px){
+        @content;
+    }
+}
+@mixin _768 {
+    @media (max-width: 768px){
+        @content;
+    }
+}
+@mixin _600 {
+    @media (max-width: 600px){
+        @content;
+    }
+}
+@mixin _480 {
+    @media (max-width: 480px){
+        @content;
+    }
+}
+@mixin _350{
+    @media (max-width: 350px){
+        @content;
+    }
+}

@@ -1,0 +1,61 @@
+.who-we-are {
+    &__wrapper {
+        padding: 75px 70px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $wispPink;
+        border-radius: 50px;
+        margin-bottom: 100px;
+
+        @include _1170 {
+            padding: 50px;
+            column-gap: 25px;
+        }
+
+        @include _768 {
+            flex-direction: column;
+            align-items: unset;
+            row-gap: 25px;
+            padding: 25px;
+        }
+        @include _600 {
+            margin-bottom: 50px;
+        }
+    }
+
+    &__img {
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    &__text-block-wrapper {
+        max-width: 50%;
+
+        @include _768 {
+            max-width: 100%;
+        }
+    }
+
+    &__title {
+        @include textWSans (700, 40px, 130%, $portGore);
+        margin-bottom: 40px;
+        @include _350 {
+            @include _350-h2;
+        }
+    }
+
+    &__text {
+        @include textMont (500, 18px, 160%, $mainColor);
+
+        @include _768 {
+            margin-bottom: 15px;
+        }
+
+        @include _350 {
+            @include _350-generalText;
+        }
+    }
+}

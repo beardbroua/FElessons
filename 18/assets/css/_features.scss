@@ -1,0 +1,234 @@
+.features {
+    margin-bottom: 120px;
+
+    @include _979 {
+        margin-bottom: 60px;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__top-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__top-title {
+        @include textWSans (700, 40px, 130%, $portGore);
+        margin-bottom: 50px;
+
+        @include _350 {
+            @include _350-h2;
+        }
+    }
+
+    &__top-text {
+        text-align: center;
+        max-width: 638px;
+        margin-bottom: 80px;
+        @include textMont (500, 18px, 160%, $mainColor);
+
+        @include _600 {
+            margin-bottom: 50px
+        }
+
+        @include _350 {
+            @include _350-generalText;
+        }
+    }
+
+    &__bottom-wrapper {
+        display: flex;
+        flex-direction: row;
+        row-gap: 50px;
+        column-gap: 30px;
+        flex-wrap: wrap;
+        max-width: 1170px;
+        justify-content: right;
+
+        @media screen and (max-width:1230px) {
+            justify-content: flex-start;
+        }
+
+        @include _600 {
+            row-gap: 25px;
+        }
+    }
+
+    &__bottom-block {
+        width: 50%;
+        max-width: 570px;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+
+        @media screen and (max-width:1230px) {
+            width: 100%;
+            max-width: 100%;
+            justify-content: flex-start;
+            margin-left: 160px;
+        }
+
+        @include _600 {
+            margin: 0;
+        }
+    }
+
+    &__bottom-link-block {
+        animation-name: unset;
+        z-index: 5;
+
+        &:hover {
+            animation-name: headShake;
+        }
+    }
+
+    &__img-block {
+        position: absolute;
+        left: -160px;
+        z-index: 3;
+
+        @include _600 {
+            position: unset;
+            margin-bottom: 20px;
+        }
+
+        @include _480 {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__bg-image-block {
+        position: absolute;
+        z-index: 0;
+
+        &_1 {
+            top: 20px;
+            right: 50px;
+        }
+
+        &_2 {
+            top: 229px;
+            right: 20px;
+        }
+
+        &_3 {
+            top: 20px;
+            right: 20px;
+        }
+
+        &_4 {
+            top: 20px;
+            right: 20px;
+        }
+    }
+
+    &__bottom-text-wrapper {
+        max-width: 400px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 62px 70px 70px 100px;
+        border-radius: 50px;
+        background-color: $blackSqueeze;
+
+        @media screen and (max-width:1230px) {
+            max-width: 100%;
+        }
+
+        @include _600 {
+            padding: 40px;
+        }
+
+        @include _480 {
+            padding: 25px;
+        }
+
+        &_2 {
+            background-color: $selago;
+        }
+
+        &_3 {
+            background-color: #FEF0F8;
+        }
+
+        &_4 {
+            background-color: #EAF6FC;
+        }
+
+        &:hover::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-radius: 50px;
+            background-color: rgba(0, 0, 0, 0.1);
+            z-index: 0;
+        }
+    }
+
+    &__bottom-text-block {
+        max-width: 230px;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        @media screen and (max-width:1230px) {
+            max-width: unset;
+        }
+    }
+
+    &__bottom-title {
+        margin-bottom: 20px;
+        @include textWSans (400, 24px, 130%, $portGore);
+
+        @include _600 {
+            font-weight: 700;
+        }
+
+        @include _480 {
+            align-self: center;
+        }
+    }
+
+    &__bottom-text {
+        height: 180px;
+        margin-bottom: 20px;
+        @include textMont (400, 16px, 160%, $mainColor);
+
+        @media screen and (max-width:1230px) {
+            height: unset;
+            margin-bottom: 30px;
+            @include textMont (500, 18px, 160%, $mainColor);
+        }
+
+        @include _350 {
+            @include _350-generalText;
+        }
+    }
+
+    &__bottom-link-block {
+        display: inline-flex;
+        align-items: center;
+
+        @include _480 {
+            align-self: center;
+        }
+    }
+
+    &__bottom-link {
+        margin-right: 20px;
+        text-decoration: none;
+        @include textMont (700, 16px, 160%, $portGore);
+    }
+}

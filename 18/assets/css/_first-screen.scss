@@ -1,0 +1,139 @@
+.first-screen {
+    margin-bottom: 100px;
+    @include _768 {
+        margin-bottom: 25px;
+    }
+    &__wrapper {
+        display: flex;
+        flex-direction: row;
+        row-gap: 31px;
+
+        @include _768 {
+            flex-direction: column-reverse;
+        }
+
+        @include _600 {
+            row-gap: 20px;
+        }
+
+        @include _350 {
+            row-gap: 10px;
+        }
+
+        &-left {
+            position: relative;
+            padding-top: 227px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+
+            @include _768 {
+                padding: 0;
+            }
+
+            @include _600 {
+                align-items: center;
+            }
+        }
+
+        &-right {
+            max-width: 770px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+        }
+    }
+
+    &__title {
+        position: absolute;
+        min-width: 600px;
+        width: 50%;
+        top: -53px;
+        left: 0;
+        @include textWSans (700, 80px, 110%, $portGore);
+
+        @include _768 {
+            font-size: 64px;
+            width: 100%;
+            position: unset;
+            min-width: unset;
+            margin: 0 auto 50px auto;
+        }
+
+        @include _600 {
+            margin-bottom: 30px;
+        }
+
+        @include _480 {
+            @include textWSans (700, 44px, 100%, $portGore);
+        }
+
+        @include _350 {
+            font-size: 40px;
+            margin-bottom: 25px;
+        }
+    }
+
+    &__text-block {
+        max-width: 370px;
+        margin-bottom: 50px;
+
+        @include _768 {
+            max-width: 100%;
+        }
+
+        @include _600 {
+            margin-bottom: 30px;
+        }
+
+        @include _480 {
+            font-size: 16px;
+        }
+
+        @include _350 {
+            margin-bottom: 25px;
+        }
+    }
+
+    &__text {
+        @include textMont (500, 18px, 160%, $mainColor);
+
+        @include _350 {
+            font-size: 14px;
+            line-height: 150%;
+            margin-bottom: 25px;
+        }
+    }
+
+    &__button {
+        max-width: 210px;
+        margin-bottom: 35px;
+        padding: 16px 52px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+        background-color: $mediumPurple;
+
+        @include _480 {
+            padding: 10px 40px;
+            margin-bottom: 25px;
+        }
+
+        &:hover {
+            background-color: $electricViolet;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        @include textMont (500, 18px, 160%, $white);
+        color: #fff;
+    }
+
+    &__img {
+        width: 100%;
+        object-fit: scale-down;
+        object-position: center;
+    }
+}

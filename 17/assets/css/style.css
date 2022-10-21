@@ -16,6 +16,11 @@ html {
     margin: 0 20px;
   }
 }
+@media screen and (max-width: 700px) {
+  .container {
+    margin: 0 10px;
+  }
+}
 .footer__left-right-wrapper, .most-popular, .lates-posts, .blog, .first-screen__title-block, .header {
   max-width: 1140px;
   margin: 0 auto;
