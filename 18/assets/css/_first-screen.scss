@@ -1,8 +1,10 @@
 .first-screen {
     margin-bottom: 100px;
+
     @include _768 {
         margin-bottom: 25px;
     }
+
     &__wrapper {
         display: flex;
         flex-direction: row;
