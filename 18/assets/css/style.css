@@ -1093,12 +1093,7 @@
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-}
-@media (max-width: 1170px) {
-  .footer__menu-wrapper {
-    justify-content: space-around;
-  }
+  justify-content: space-around;
 }
 @media (max-width: 768px) {
   .footer__menu-wrapper {
