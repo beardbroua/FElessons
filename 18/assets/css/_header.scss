@@ -118,12 +118,22 @@
         @include textMont (500, 12px, 100%, $portGore);
         padding: 10px 12px;
     }
+    @include _480 {
+        justify-content: center;
+        padding-top: 16px;
+        padding-bottom:16px ;
+        
+    }
 
     &-img {
         transition: all 0.3s;
         @media screen and (max-width:445px) {
+            justify-content: center;
             display: none;
         }
+    }
+    &-svg {
+        transition: all 0.3s;
     }
 
     &:hover {
@@ -131,8 +141,14 @@
         border: 1px solid #F063B8;
         color: $white ;
     }
+    &:active {
+        background-color: #C13584;
+        border: 1px solid #C13584;
+        
+    }
 
     &:hover .button-svg {
         stroke: $white;
+        
     }
 }

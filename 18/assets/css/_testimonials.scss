@@ -1,5 +1,8 @@
 .testimonials {
     margin-bottom: 120px;
+    @include _979 {
+        margin-bottom: 60px;
+    }
 
     &__wrapper {
         display: flex;
@@ -9,35 +12,53 @@
         padding: 80px 70px;
         background-color: #CCDDFF;
         border-radius: 50px;
-
-        &::after {
-            content: '';
+        &-background {
             position: absolute;
-            width: 46.37%;
-            height: 320px;
-            top: 0;
-            left: 0;
+            max-width: 100%;
+          
             z-index: 0;
-            background-size: cover;
-            background: url(../images/bg-testimonials-image-1.svg);
-        }
-
-        &::before {
-            content: '';
-            position: absolute;
-            width: 49.58%;
-            height: 580px;
-            top: 0;
-            right: 0;
-            z-index: 0;
-            background-size: cover;
-            background: url(../images/bg-testimonials-image-2.svg);
-
-            @include _768 {
-                top: unset;
-                bottom: 0;
+            &_1 {
+                top: 0;
+                left: 0;
+            }
+            &_2 {
+                top: 0;
+                right: 0;
+                @include _768 {
+                    top: unset;
+                    bottom: 0;
+                }
             }
         }
+
+        // &::after {
+        //     content: '';
+        //     position: absolute;
+        //     width: 46.37%;
+        //     height: 320px;
+        //     top: 0;
+        //     left: 0;
+        //     z-index: 0;
+        //     background-size: cover;
+        //     background: url(../images/bg-testimonials-image-1.svg);
+        // }
+
+        // &::before {
+        //     content: '';
+        //     position: absolute;
+        //     width: 49.58%;
+        //     height: 580px;
+        //     top: 0;
+        //     right: 0;
+        //     z-index: 0;
+        //     background-size: cover;
+        //     background: url(../images/bg-testimonials-image-2.svg);
+
+        //     @include _768 {
+        //         top: unset;
+        //         bottom: 0;
+        //     }
+        // }
 
         @include _979 {
             padding: 50px;

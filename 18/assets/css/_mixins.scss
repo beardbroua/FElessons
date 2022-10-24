@@ -4,7 +4,7 @@
     font-weight: $fw;
     font-size: $fs;
     line-height: $lh;
-    color: $mainColor;
+    color: $color;
 }
 
 @mixin textWSans ($fw: 700, $fs: 80px, $lh: 110px, $color: $titleColor ) {
@@ -13,7 +13,7 @@
     font-weight: $fw;
     font-size: $fs;
     line-height: $lh;
-    color: $titleColor;
+    color: $color;
 }
 
 @mixin _350-generalText {

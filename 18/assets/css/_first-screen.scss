@@ -116,6 +116,7 @@
         align-items: center;
         border-radius: 50px;
         background-color: $mediumPurple;
+        transition: all 0.3s;
 
         @include _480 {
             padding: 10px 40px;
@@ -125,12 +126,15 @@
         &:hover {
             background-color: $electricViolet;
         }
+        &:active {
+            background-color: $mediumRedViolet;
+        }
     }
 
     &__link {
         text-decoration: none;
         @include textMont (500, 18px, 160%, $white);
-        color: #fff;
+        
     }
 
     &__img {

@@ -24,11 +24,25 @@
             margin-bottom: 50px;
         }
     }
+    &__img-block {
+        display: flex;
+        justify-content: center;
+    }
 
     &__img {
         width: 100%;
         object-fit: cover;
         object-position: center;
+        @include _768 {
+            width: 50%;
+        }
+        @include _600 {
+            width: 75%;
+        }
+        @include _480 {
+            width: 100%;
+        }
+
     }
 
     &__text-block-wrapper {

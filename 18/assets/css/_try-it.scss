@@ -1,0 +1,63 @@
+.try-for-free {
+    margin-bottom: 100px;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include _979 {
+            flex-direction: column;
+        }
+    }
+
+    &__text-block {
+
+        margin-bottom: 50px;
+
+        @include _979 {
+            text-align: center;
+        }
+    }
+
+    &__title {
+        margin-bottom: 20px;
+        @include textWSans (700, 40px, 130%, $portGore);
+    }
+
+    &__text {
+        @include textMont (500, 18px, 160%, $mainColor);
+    }
+
+    &__button-block {
+        display: flex;
+        column-gap: 20px;
+
+        @include _979 {
+            column-gap: 40px;
+        }
+
+        @include _480 {
+            flex-direction: column;
+            row-gap: 30px;
+        }
+    }
+
+    &__button_pink {
+        padding: 16px 52px;
+        background-color: $brilliantRose;
+        border-color: $brilliantRose;
+
+        &:hover {
+            background-color: $mediumPurple;
+            border-color: $mediumPurple;
+        }
+
+        &:active {
+            background-color: $electricViolet;
+            border-color: $electricViolet;
+        }
+
+
+    }
+}
