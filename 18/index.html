@@ -30,6 +30,7 @@
                             <rect x="26.5493" y="0.5" width="18.3099" height="35" rx="9.15493" fill="#F063B8" />
                         </svg>
                     </div>
+                   
                     <nav class="header__menu">
                         <ul class="header__menu-list">
                             <li class="header__menu-item">
@@ -42,6 +43,18 @@
                     </nav>
                 </div>
                 <div class="header__wrapper-right">
+                    <input class="header__burger-input" type="checkbox" id="header-burger">
+                    <nav class="header__menu-mobile animate__animated  animate__bounceInLeft">
+                        <ul class="header__menu-list-mobile">
+                            <li class="header__menu-item-mobile">
+                                <a class="header__menu-link-mobile" href="#">About</a>
+                            </li>
+                            <li class="header__menu-item-mobile"><a class="header__menu-link-mobile" href="#">Help</a></li>
+                            <li class="header__menu-item-mobile"><a class="header__menu-link-mobile" href="#">Features</a></li>
+                            <li class="header__menu-item-mobile"><a class="header__menu-link-mobile" href="#">Sign Up</a></li>
+                        </ul>
+                    </nav>
+                    
                     <a href="#" class="button header__button ">
                         <span class="header__button-text  button-text ">Request Demo</span>
                         <svg class="button-img header__button-img " width="22" height="16" viewBox="0 0 22 16"
@@ -52,7 +65,10 @@
                                 stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                     </a>
-                    <span class="header__burger-menu">
+                    <label class="header__burger-label" for="header-burger">
+                        <span class="header__burger-menu">
+                    </label>
+                    
                     </span>
                 </div>
             </div>

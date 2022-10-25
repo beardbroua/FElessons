@@ -60,4 +60,9 @@
 
 
     }
+    &__button-img {
+        @include _480 {
+            display: none;
+        }
+    }
 }

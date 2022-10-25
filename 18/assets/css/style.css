@@ -21,6 +21,7 @@
 
 .header {
   margin-bottom: 100px;
+  position: relative;
 }
 @media (max-width: 768px) {
   .header {
@@ -38,6 +39,11 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+@media screen and (max-width: 840px) {
+  .header__wrapper {
+    padding-top: 0;
+  }
 }
 .header__wrapper-left {
   width: 513px;
@@ -85,8 +91,44 @@
   text-decoration: none;
   color: #8A40EE;
 }
+.header__menu-mobile {
+  visibility: hidden;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 80%;
+  left: 50px;
+  right: 50px;
+  padding: 40px 0;
+  background-color: #9C69E2;
+  border-radius: 50px;
+  z-index: 5;
+}
+@media (max-width: 350px) {
+  .header__menu-mobile {
+    left: 20px;
+    right: 20px;
+  }
+}
+.header__menu-list-mobile {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+.header__menu-item-mobile {
+  text-align: center;
+}
+.header__menu-link-mobile {
+  text-decoration: none;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 160%;
+  color: #ffffff;
+}
 .header__burger-menu {
-  margin-left: 50px;
   display: none;
   align-items: center;
   position: relative;
@@ -101,11 +143,6 @@
     display: flex;
   }
 }
-@media screen and (max-width: 340px) {
-  .header__burger-menu {
-    margin-left: 25px;
-  }
-}
 .header__burger-menu::before, .header__burger-menu::after {
   display: block;
   content: "";
@@ -115,6 +152,36 @@
   height: 3px;
   background-color: #4B5D68;
   transition: all 0.3s linear;
+}
+.header__burger-input {
+  display: none;
+}
+.header__burger-input:checked ~ .header__burger-label .header__burger-menu {
+  border-color: transparent;
+}
+.header__burger-input:checked ~ .header__burger-label .header__burger-menu::after {
+  transform: rotate(45deg);
+}
+.header__burger-input:checked ~ .header__burger-label .header__burger-menu::before {
+  transform: rotate(-45deg);
+}
+.header__burger-input:checked ~ .header__menu-mobile {
+  visibility: visible;
+}
+.header__burger-label {
+  display: none;
+  margin-left: 25px;
+  padding: 25px;
+}
+@media screen and (max-width: 840px) {
+  .header__burger-label {
+    display: block;
+  }
+}
+@media (max-width: 350px) {
+  .header__burger-label {
+    margin-left: 0;
+  }
 }
 
 .button {
@@ -969,6 +1036,11 @@
 .try-for-free__button_pink:active {
   background-color: #8A40EE;
   border-color: #8A40EE;
+}
+@media (max-width: 480px) {
+  .try-for-free__button-img {
+    display: none;
+  }
 }
 
 .footer__wrapper {
