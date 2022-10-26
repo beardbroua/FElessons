@@ -1,0 +1,15 @@
+.header {
+    padding-top: 120px;
+    margin-bottom: 50px;
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+    }
+    &__logo {
+        
+        animation: fadeIn;
+        animation-delay: 2s;
+        animation-duration: 7s;
+    }
+    
+}

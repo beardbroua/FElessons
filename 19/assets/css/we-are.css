@@ -1,0 +1,37 @@
+.we-are {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 85px;
+}
+.we-are__title-wrapper {
+  padding: 0 45px 21px 45px;
+  border-bottom: 1px solid #fff;
+}
+.we-are__title {
+  font-family: "Open sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.we-are__social-wrapper {
+  padding: 20px;
+  margin: 0 auto;
+}
+.we-are__social-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  -moz-column-gap: 34px;
+       column-gap: 34px;
+}
+.we-are__svg {
+  fill: #fff;
+}
+.we-are__social-link:hover .we-are__svg {
+  -webkit-animation: flip;
+          animation: flip;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}/*# sourceMappingURL=we-are.css.map */

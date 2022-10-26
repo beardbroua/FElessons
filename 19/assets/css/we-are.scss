@@ -1,0 +1,42 @@
+.we-are {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 85px;
+
+    &__title-wrapper {
+        padding: 0 45px 21px 45px;
+        border-bottom: 1px solid #fff;
+    }
+
+    &__title {
+        
+        font-family: "Open sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        text-transform: uppercase;
+        color: #fff;
+
+    }
+    &__social-wrapper {
+        padding: 20px;
+        margin: 0 auto;
+    }
+    &__social-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        column-gap: 34px;
+
+    }
+    &__svg {
+        fill: #fff;
+        
+    }
+    &__social-link:hover .we-are__svg {
+        animation: flip;
+        animation-duration: 1s;
+    }
+
+
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <title>Kasper</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container container">
+            <div class="header__wrapper">
+                <svg class="header__logo  " xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="112" height="36" viewBox="0 0 112 36">
+                    <image id="Logo" width="112" height="36"
+                        xlink:href="data:img/png;base64,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" />
+                </svg>
+            </div>
+        </div>
+    </header>
+    <section class="we-are">
+        <div class="we-are__container container">
+            <div class="we-are__title-wrapper">
+                <h1 class="we-are__title">we are social</h1>
+            </div>
+            <div class="we-are__social-wrapper">
+                <ul class="we-are__social-list">
+                    <li class="we-are__social-item">
+                        <a class="we-are__social-link" href="#">
+                            <svg class="we-are__svg " xmlns="http://www.w3.org/2000/svg" width="6.594" height="14.125"
+                                viewBox="0 0 6.594 14.125">
+                                <path id="Facebook" class="cls-1"
+                                    d="M887.694,277.242h2.946v-7.058h1.986l0.258-2.5H890.64v-1.467a0.6,0.6,0,0,1,.625-0.677h1.582v-2.422l-2.181-.008a2.757,2.757,0,0,0-2.972,2.961v1.613h-1.4v2.5h1.4v7.058Z"
+                                    transform="translate(-886.281 -263.125)" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="we-are__social-item">
+                        <a class="we-are__social-link" href="#">
+                            <svg class="we-are__svg" xmlns="http://www.w3.org/2000/svg" width="14.156" height="11.469"
+                                viewBox="0 0 14.156 11.469">
+                                <path id="Tweter" class="cls-1"
+                                    d="M927.833,275.164a8.28,8.28,0,0,0,12.736-6.946c0-.124,0-0.25-0.01-0.374a5.857,5.857,0,0,0,1.453-1.5,5.719,5.719,0,0,1-1.671.456,2.905,2.905,0,0,0,1.279-1.6,5.874,5.874,0,0,1-1.848.7,2.912,2.912,0,0,0-5.031,1.983,2.941,2.941,0,0,0,.074.66,8.271,8.271,0,0,1-6-3.028,2.9,2.9,0,0,0,.9,3.869,2.884,2.884,0,0,1-1.319-.361v0.035a2.9,2.9,0,0,0,2.334,2.842,2.844,2.844,0,0,1-.766.1,2.976,2.976,0,0,1-.547-0.051,2.907,2.907,0,0,0,2.717,2.012A5.925,5.925,0,0,1,927.833,275.164Z"
+                                    transform="translate(-927.844 -265)" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="we-are__social-item">
+                        <a class="we-are__social-link" href="#">
+                            <svg class="we-are__svg" xmlns="http://www.w3.org/2000/svg" width="14.188" height="14.125"
+                                viewBox="0 0 14.188 14.125">
+                                <path id="Google" class="cls-1"
+                                    d="M986.929,265.436H982.75c-2.12,0-3.89,1.557-3.89,3.272a3,3,0,0,0,3.159,3.146c0.136,0,.271-0.006.4-0.015a1.758,1.758,0,0,0-.222.81,1.458,1.458,0,0,0,.6,1.088c-0.251,0-.494.006-0.758,0.006-2.428,0-4.129,1.664-4.129,3.263,0,1.573,2.05,2.557,4.478,2.557,2.768,0,4.469-1.564,4.469-3.139,0-1.261-.273-1.9-1.623-2.9a3.011,3.011,0,0,1-1.228-1.283,1.428,1.428,0,0,1,.839-1.244,2.838,2.838,0,0,0,1.233-2.227,2.621,2.621,0,0,0-1.186-2.353H986Zm-1.417,10.719a1.946,1.946,0,0,1,.053.447c0,1.272-.822,2.264-3.181,2.264-1.679,0-2.891-1.057-2.891-2.328,0-1.246,1.422-2.323,3.1-2.3a3.645,3.645,0,0,1,1.087.174C984.593,275.04,985.327,275.434,985.512,276.155Zm-2.688-4.936a2.729,2.729,0,0,1-2.39-2.537c-0.2-1.474.56-2.6,1.686-2.57s2.09,1.244,2.284,2.719S983.95,271.253,982.824,271.219Zm7.331-3.669v-1.922h-0.964v1.922h-1.926v0.959h1.926v1.921h0.964v-1.921h1.93V267.55h-1.93Z"
+                                    transform="translate(-977.906 -265.438)" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="we-are__social-item">
+                        <a class="we-are__social-link" href="#">
+                            <svg class="we-are__svg" xmlns="http://www.w3.org/2000/svg" width="14.16" height="14.125"
+                                viewBox="0 0 14.16 14.125">
+                                <path id="Dribble" class="cls-1"
+                                    d="M1031.42,268.592a6.388,6.388,0,0,0-.65-1.2,7.026,7.026,0,0,0-.86-1.045,7.585,7.585,0,0,0-1.05-.861,7.131,7.131,0,0,0-1.21-.652,6.819,6.819,0,0,0-1.33-.41,7.009,7.009,0,0,0-1.43-.145,6.842,6.842,0,0,0-1.42.145,7.134,7.134,0,0,0-1.34.41,7.04,7.04,0,0,0-1.2.652,7.585,7.585,0,0,0-1.05.861,7.317,7.317,0,0,0-1.52,2.247,6.828,6.828,0,0,0-.41,1.328,6.811,6.811,0,0,0,0,2.843,6.923,6.923,0,0,0,.41,1.329,7.041,7.041,0,0,0,.66,1.2,6.877,6.877,0,0,0,.86,1.045,7.163,7.163,0,0,0,1.05.859,6.982,6.982,0,0,0,1.2.654,7.159,7.159,0,0,0,2.76.555,7.3,7.3,0,0,0,1.43-.143,6.824,6.824,0,0,0,1.33-.412,7.071,7.071,0,0,0,1.21-.654,7.163,7.163,0,0,0,1.05-.859,6.877,6.877,0,0,0,.86-1.045,7.242,7.242,0,0,0,1.07-2.528,7.287,7.287,0,0,0,0-2.843A6.232,6.232,0,0,0,1031.42,268.592Zm-6.53-3.284a6.015,6.015,0,0,1,4,1.506,6.576,6.576,0,0,1-3.16,2.184,30.19,30.19,0,0,0-2.26-3.52A6.054,6.054,0,0,1,1024.89,265.308Zm-1.45.176v0l-0.02,0A0.032,0.032,0,0,0,1023.44,265.484Zm-1.13.4a36.071,36.071,0,0,1,2.25,3.474,22.432,22.432,0,0,1-5.59.736A6.022,6.022,0,0,1,1022.31,265.887Zm-1.92,9.482v0Zm0,0a5.961,5.961,0,0,1-1.55-4.03V271.15a22.321,22.321,0,0,0,6.22-.859c0.17,0.337.34,0.681,0.49,1.025l-0.24.07A9.567,9.567,0,0,0,1020.39,275.369Zm0.78,0.729s-0.05-.044-0.13-0.106c0.04,0.035.09,0.06,0.14,0.1Zm3.72,1.275a6.012,6.012,0,0,1-3.71-1.285,8.144,8.144,0,0,1,4.74-3.76,0.114,0.114,0,0,0,.04-0.014,24.637,24.637,0,0,1,1.3,4.58A6.062,6.062,0,0,1,1024.89,277.373Zm3.39-1.03a26.456,26.456,0,0,0-1.18-4.308,8.733,8.733,0,0,1,3.77.264A6.027,6.027,0,0,1,1028.28,276.343Zm-1.55-5.259c-0.04-.1-0.09-0.207-0.13-0.313-0.13-.3-0.26-0.587-0.4-0.875a7.749,7.749,0,0,0,3.37-2.386,6.02,6.02,0,0,1,1.38,3.769A14.206,14.206,0,0,0,1026.73,271.084Z"
+                                    transform="translate(-1017.81 -264.281)" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__wrapper">
+                <span class=" footer__copyright">
+                    © 2014 - <span class="footer__copyright_blue">Kasper</span> Kasper All Right Reserved
+                </span>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

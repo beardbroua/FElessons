@@ -1,0 +1,19 @@
+.footer {
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__copyright {
+        font-family: "Open sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        text-transform: capitalize;
+        color: #fff;
+
+        &_blue {
+            color: #19c8fa;
+        }
+    }
+}
