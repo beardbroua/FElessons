@@ -17,7 +17,7 @@ body {
 .sidebar {
   display: inline-flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   background-color: #283046;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
@@ -114,7 +114,7 @@ body {
 }
 .sidebar__current-item {
   height: 59px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -129,7 +129,7 @@ body {
   justify-content: center;
   flex-direction: row;
   align-items: center;
-  margin-bottom: 44px;
+  margin-bottom: 20px;
 }
 .sidebar__divider-line {
   width: 13.33px;
@@ -145,7 +145,6 @@ body {
 }
 .sidebar__menu-list {
   display: flex;
-  row-gap: 22px;
   flex-direction: column;
   justify-content: center;
   align-items: center;

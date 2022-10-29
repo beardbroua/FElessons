@@ -1,7 +1,7 @@
 .sidebar {
     display: inline-flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     background-color: $blueDark;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
@@ -51,42 +51,31 @@
         position: absolute;
         left: -9999px;
     }
-   
 
     &__switcher-input:checked~.sidebar__full {
         .sidebar__menu-svg-text {
             display: none;
         }
-
     }
 
     &__switcher-input:checked~.sidebar__full {
         .sidebar__menu-text {
             display: none;
         }
-
     }
 
     &__switcher-input:checked~.sidebar__full {
-
         .sidebar__menu-item {
             width: 80px;
         }
-
-
     }
-    &__switcher-input:checked~.sidebar__full {
 
+    &__switcher-input:checked~.sidebar__full {
         .sidebar__badge {
             left: 49px;
             top: 10px;
         }
-
-
     }
-
-
-
 
     &__switcher-label {
         position: relative;
@@ -136,7 +125,7 @@
 
     &__current-item {
         height: 59px;
-        margin-bottom: 50px;
+        margin-bottom: 40px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -153,7 +142,7 @@
         justify-content: center;
         flex-direction: row;
         align-items: center;
-        margin-bottom: 44px;
+        margin-bottom: 20px;
 
         &-line {
             width: 13.33px;
@@ -172,7 +161,6 @@
 
     &__menu-list {
         display: flex;
-        row-gap: 22px;
         flex-direction: column;
         justify-content: center;
         align-items: center;
