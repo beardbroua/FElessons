@@ -25,6 +25,6 @@ if (cash > chocoPrice) { alert("Сьогодні в тебе день здоро
 if (shortChange > 0) { alert(`В тебе залишиться ще ${shortChange} грн решти, тож не забудь прокласти свій маршрут сьогодні біля церкви.`);
 } else { alert(" Бувай :)");}
 
-let number = prompt ("Будь-ласка введи тризначне число");
+let number = prompt ("Будь-ласка, введи тризначне число");
 alert(('' + number).split('').reverse().join(''));
 
