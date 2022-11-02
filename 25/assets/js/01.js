@@ -12,7 +12,7 @@ console.log(x / 1 + y);
 let driveVolume = prompt("Привіт! Вкажи обсяг своєї, повної вірусів, флешки.");
 const gb = 1024;
 let filesNumber = (Math.floor(driveVolume * gb / 820));
-alert(`Якщо не шкода форматнути флешку то влізе ${filesNumber} цих файлів`);
+alert(`Якщо не шкода форматнути флешку то влізе ${filesNumber} файлів по 820 Мб`);
 
 
 let cash = prompt("Ти досі користуєшся готівкою? Це жах! Скілки ще цих папірців в тебе залишилось?");
