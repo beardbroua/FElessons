@@ -22,7 +22,8 @@ let chocoQuantity = (Math.floor(chocoFoolQuantity));
 let shortChange = (Math.round((chocoFoolQuantity - chocoQuantity) * 100) / 100);
 if (cash > chocoPrice) { alert("Сьогодні в тебе день здоров'я! Сподіваюсь ти не забула,що їсти солодке шкідливо?");
 } else { alert(`Будь-ласка обміняй свої застарілі фіатні гроші на ${chocoQuantity}шт шоколаду.`) ;}
-if (shortChange > 0) { alert(`В тебе залишиться ще ${shortChange} грн решти, тож твій маршрут сьогодні обов'язково має пролягати біля церкви.`);};
+if (shortChange > 0) { alert(`В тебе залишиться ще ${shortChange} грн решти, тож не забудь прокласти свій маршрут сьогодні біля церкви.`);
+} else { alert(" Бувай :)");}
 
 let number = prompt ("Будь-ласка введи тризначне число");
 alert(('' + number).split('').reverse().join(''));
