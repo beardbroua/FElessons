@@ -1,0 +1,51 @@
+@mixin _1250 {
+    @media (max-width: 1250px) {
+        @content;
+    }
+}
+
+@mixin _1170 {
+    @media (max-width: 1170px) {
+        @content;
+    }
+}
+
+@mixin _979 {
+    @media (max-width: 979px) {
+        @content;
+    }
+}
+
+@mixin _768 {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin _600 {
+    @media (max-width: 600px) {
+        @content;
+    }
+}
+
+@mixin _480 {
+    @media (max-width: 480px) {
+        @content;
+    }
+}
+
+@mixin _350 {
+    @media (max-width: 350px) {
+        @content;
+    }
+}
+
+@mixin basic-text {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 32px;
+    letter-spacing: 0.05em;
+    color: #565656;
+}

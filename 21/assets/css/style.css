@@ -1,0 +1,92 @@
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+@media (max-width: 1250px) {
+  .container {
+    margin: 0 40px;
+  }
+}
+
+.h2 {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 166%;
+  letter-spacing: 0.1em;
+  color: #000000;
+}
+
+.header {
+  padding: 38px 0;
+}
+.header__logo-text {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.5em;
+  color: #000000;
+}
+
+.first-screen {
+  margin-bottom: 90px;
+}
+.first-screen__title {
+  margin-bottom: 70px;
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 64px;
+  letter-spacing: 0.05em;
+  color: #000000;
+}
+.first-screen__img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 90px;
+}
+.first-screen__text-block {
+  max-width: 570px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+}
+.first-screen__text {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 32px;
+  letter-spacing: 0.05em;
+  color: #565656;
+}
+
+.second-screen {
+  margin-bottom: 90px;
+}
+.second-screen__h2 {
+  margin-bottom: 50px;
+}
+.second-screen__img {
+  width: 100%;
+  margin-bottom: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.second-screen__text {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 32px;
+  letter-spacing: 0.05em;
+  color: #565656;
+}
+.second-screen__text:first-child {
+  margin-bottom: 50px;
+}/*# sourceMappingURL=style.css.map */

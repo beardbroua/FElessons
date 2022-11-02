@@ -1,0 +1,37 @@
+.first-screen {
+    margin-bottom: 90px;
+
+    &__title {
+        margin-bottom: 70px;
+        font-family: 'Red Hat Display';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 64px;
+        letter-spacing: 0.05em;
+        color: #000000;
+    }
+
+    &__img {
+        width: 100%;
+        object-fit: cover;
+        margin-bottom: 90px;
+    }
+
+    &__text-block {
+        max-width: 570px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 50px;
+    }
+
+    &__text {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 32px;
+        letter-spacing: 0.05em;
+        color: #565656;
+    }
+}
