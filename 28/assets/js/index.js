@@ -113,6 +113,7 @@ function changeHour() {
     newHour = +prompt('Enter the hour')
     time.hours = newHour
 }
+
 console.log(changeSeconds())
 console.log(changeSek())
 console.log(changeMin())
@@ -120,7 +121,6 @@ time.showInfo()
 console.log(changeMinutes())
 console.log(changeMin())
 time.showInfo()
-
 console.log(changeHour())
 time.showInfo()
 
