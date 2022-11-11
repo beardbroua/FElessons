@@ -48,7 +48,7 @@ function checkTimeAndFuel() {
     }
     totalTimeToTravel = restQnty + timeToTravel
     fuelQuantity = superCar["average fuel consumption"] / 100 * distance
-    alert(`It will take ${totalTimeToTravel} hours and ${fuelQuantity.toFixed(2)} liters of fuel to cover this distance.`)
+    alert(`It will take ${totalTimeToTravel.toFixed(1)} hours and ${fuelQuantity.toFixed(1)} liters of fuel to cover this distance.`)
 }
 console.log(checkTimeAndFuel())
 
