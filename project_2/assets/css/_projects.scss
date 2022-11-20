@@ -1,0 +1,94 @@
+.projects {
+    &__title-block {
+        flex-direction: column;
+        @include flexBetweenCenter;
+        margin-bottom: 90px;
+    }
+
+    &__hr {
+        width: 100px;
+        height: 1px;
+        background-color: $mainColor;
+        border: none;
+        margin-bottom: 30px;
+    }
+
+    &__title {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 44px;
+        line-height: 54px;
+        color: $mainColor;
+    }
+
+    &__location-block-svg {
+        width: 9px;
+    }
+
+    &__main-content-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__image-block {
+        display: flex;
+        max-width: 50%;
+        position: relative;
+    }
+
+    &__image-block-bg {
+        width: 585px;
+        height: 470px;
+        background-color: #55B7FF;
+    }
+
+    &__image-block-img {
+        position: absolute;
+        top: 57px;
+        left: 215px;
+    }
+
+    &__text-card {
+        display: flex;
+        max-width: 50%;
+        padding-right: 215px;
+        padding-left: 115px;
+    }
+
+    &__text-block {
+        max-width: 470px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__text-block-pre-title {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 27px;
+        color: #2C4058;
+    }
+
+    &__text-block-title {
+        margin-bottom: 18px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 44px;
+        line-height: 54px;
+        color: #2C4058;
+    }
+
+    &__text-block-text {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+        color: #2C4058;
+    }
+}
