@@ -1,0 +1,227 @@
+.latest-news {
+   position: relative;
+   
+   background: linear-gradient(237.1deg, #24CCFA 11.16%, #3C7FD4 89.18%);
+
+    .multiple-items {
+        width: 1170px;
+        display: inline-block;
+    }
+
+    &__wrapper {
+        position: relative;
+        padding: 120px 0;
+        max-width: 1600px;
+       
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+    }
+    &__bg-image {
+        position: absolute;
+        bottom: 0;
+        z-index: 1;
+      
+    }
+
+    &__title {
+        margin-bottom: 90px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 44px;
+        line-height: 54px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    &__divider {
+        width: 100px;
+        height: 1px;
+        background-color: #FFFFFF;
+        border: none;
+        margin-bottom: 30px;
+    }
+    &__slider {
+        position: relative;
+        z-index: 2;
+    }
+
+    &__slider-block {
+       
+        margin: 0 15px 40px 15px;
+        background-color: #fff;
+        max-width: 370px;
+        
+        
+    }
+
+    &__slider-img {
+        width: 100%;
+        margin-bottom: 23px;
+    }
+
+    &__slider-text-block {
+        padding: 0 20px;
+        margin-bottom: 39px;
+    }
+
+    &__slider-text-title {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 27px;
+        margin-bottom: 15px;
+        color: #2C4058;
+    }
+
+    &__slider-text {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        color: #2C4058
+    }
+
+    &__slider-author-block {
+        margin-left: 20px;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 30px;
+    }
+
+    &__slider-author-photo {
+        margin-right: 20px;
+        border-radius: 50%;
+    }
+
+    &__slider-author-name {
+        margin-bottom: 6px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: #2C4058;
+    }
+
+    &__slider-author-date {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #55B7FF;
+    }
+
+    .slick-prev {
+        left: -100px;
+    }
+
+    .slick-next {
+        right: -100px;
+    }
+
+    .slick-prev,
+    .slick-next {
+        width: 40px;
+        height: 40px;
+        opacity: 0.5;
+        border: 1px solid #FFFFFF;
+        border-radius: 50%;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+        font-family: 'FontAwesome';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        /* identical to box height */
+
+
+        color: #FFFFFF;
+    }
+
+    .slick-prev:before {
+        content: "<";
+
+    }
+
+    .slick-next:before {
+        content: ">";
+
+    }
+
+    .slick-dots {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        column-gap: 40px;
+       
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+      
+    }
+
+    .slick-dots li {
+        position: relative;
+        display: inline-block;
+        height: 10px;
+        width: 10px;
+        margin: 0;
+        padding: 0;
+        cursor: pointer;
+    }
+
+    .slick-dots li button {
+        border: 0;
+        background: transparent;
+        display: block;
+        border: 1px solid #fff;
+
+        border-radius: 50%;
+        height: 10px;
+        width: 10px;
+        outline: none;
+        line-height: 0px;
+        font-size: 0px;
+        color: transparent;
+        padding: 0;
+        cursor: pointer;
+
+        &:active {
+            background-color: #fff;
+        }
+    }
+
+    .slick-dots li button:before {
+
+        content: "";
+
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        font-family: "slick";
+        font-size: 6px;
+        line-height: 20px;
+        text-align: center;
+
+        opacity: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    .slick-dots li.slick-active button:before {
+        background-color: #fff;
+    }
+}

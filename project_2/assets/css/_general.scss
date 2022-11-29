@@ -1,4 +1,14 @@
 .container {
-    width: 1600px;
+    max-width: 1600px;
     margin: 0 auto;
+}
+h1 {
+    margin: 0;
+}
+button {
+    padding: 0;
+}
+hr {
+    margin-block-start: 0;
+    margin-block-end: 0;
 }

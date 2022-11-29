@@ -1,0 +1,22 @@
+.traffic-light {
+  background-color: #2c3e50;
+}
+
+.circle {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.circle.red {
+  background-color: brown;
+  box-shadow: 0 0 5px;
+}
+
+.circle.yellow {
+  background-color: rgb(216, 192, 53);
+  box-shadow: 0 0 5px;
+}
+
+.circle.green {
+  background-color: rgb(15, 165, 15);
+  box-shadow: 0 0 5px;
+}/*# sourceMappingURL=style.css.map */

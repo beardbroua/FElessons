@@ -1,4 +1,5 @@
 .projects {
+    margin-bottom: 150px;
     &__title-block {
         flex-direction: column;
         @include flexBetweenCenter;
@@ -31,24 +32,38 @@
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-between;
+        row-gap: 120px;
     }
 
     &__image-block {
         display: flex;
         max-width: 50%;
         position: relative;
+
     }
 
     &__image-block-bg {
         width: 585px;
         height: 470px;
         background-color: #55B7FF;
+
+        &_fiolet {
+            background-color: #7E5AFF;
+        }
     }
 
     &__image-block-img {
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
         position: absolute;
         top: 57px;
         left: 215px;
+
+        &_fiolet {
+            left: unset;
+            right: 215px;
+        }
     }
 
     &__text-card {
@@ -56,10 +71,16 @@
         max-width: 50%;
         padding-right: 215px;
         padding-left: 115px;
+
+        &_bottom {
+            padding-right: 115px;
+            padding-left: 215px;
+        }
     }
 
     &__text-block {
-        max-width: 470px;
+        margin-top: 151px;
+        max-width: 476px;
         display: flex;
         flex-direction: column;
     }
@@ -84,11 +105,51 @@
     }
 
     &__text-block-text {
+        margin-bottom: 40px;
         font-family: 'Open Sans';
         font-style: normal;
         font-weight: 400;
         font-size: 18px;
         line-height: 30px;
         color: #2C4058;
+    }
+
+    &__text-block-button {
+        text-decoration: none;
+        max-width: 108px;
+        margin-bottom: 60px;
+        padding: 16px 41px;
+        border: 1px solid #2C4058;
+
+        &-text {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #000000;
+
+        }
+
+        &:hover {
+            border: 1px solid #55B7FF;
+        }
+
+        &:focus {
+            .projects__text-block-button-text {
+                color: #55B7FF;
+            }
+        }
+
+    }
+
+    &__location-block-text {
+        margin-left: 10px;
+        font-family: 'Open Sans';
+        font-style: italic;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
+        color: #000000;
     }
 }

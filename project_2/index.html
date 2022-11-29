@@ -5,15 +5,137 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&family=Source+Sans+Pro&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="assets/slick/slick.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css" />
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Monticello</title>
 </head>
 
 <body>
+    <header class="header">
+        <div class="header__container container">
+            <div class="header__wrapper">
+                <div class="header__single-item single-item">
+                    <div class="header__slider-block header__slider-block_1">
+                        <div class="header__slider-text-block ">
+                            <h1 class="header__slider-title">SIMPLE & MODERN</h1>
+                            <span class="header__slider-text">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</span>
+                        </div>
+                    </div>
+                    <div class="header__slider-block header__slider-block_2">
+                        <div class="header__slider-text-block">
+                            <h1 class="header__slider-title">SIMPLE & MODERN</h1>
+                            <span class="header__slider-text">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</span>
+                        </div>
+                    </div>
+                    <div class="header__slider-block header__slider-block_1">
+                        <div class="header__slider-text-block ">
+                            <h1 class="header__slider-title">SIMPLE & MODERN</h1>
+                            <span class="header__slider-text">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</span>
+                        </div>
+                    </div>
+                    <div class="header__slider-block header__slider-block_2">
+                        <div class="header__slider-text-block ">
+                            <h1 class="header__slider-title">SIMPLE & MODERN</h1>
+                            <span class="header__slider-text">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</span>
+                        </div>
+                    </div>
+                    <div class="header__slider-block header__slider-block_1">
+                        <div class="header__slider-text-block ">
+                            <h1 class="header__slider-title">SIMPLE & MODERN</h1>
+                            <span class="header__slider-text">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</span>
+                        </div>
+                    </div>
+                </div>
+                <a class="header__button" href="">
+                    <svg class="header__button-svg" width="9" height="6" viewBox="0 0 9 6" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M8.90479 1.11105C8.9606 1.16685 8.9885 1.23103 8.9885 1.30357C8.9885 1.37612 8.9606 1.44029 8.90479 1.49609L5.00412 5.39676C4.94832 5.45257 4.88415 5.48047 4.8116 5.48047C4.73906 5.48047 4.67488 5.45257 4.61908 5.39676L0.71841 1.49609C0.662606 1.44029 0.634705 1.37612 0.634705 1.30357C0.634705 1.23103 0.662606 1.16685 0.71841 1.11105L1.13694 0.692522C1.19274 0.636718 1.25691 0.608817 1.32946 0.608817C1.402 0.608817 1.46618 0.636718 1.52198 0.692522L4.8116 3.98214L8.10122 0.692522C8.15703 0.636718 8.2212 0.608817 8.29375 0.608817C8.36629 0.608817 8.43046 0.636718 8.48627 0.692522L8.90479 1.11105Z"
+                            fill="white" />
+                    </svg>
+                </a>
+                <div class="header__top-block">
+                    <div class="header__logo">
+                        <svg width="241" height="54" viewBox="0 0 241 54" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <rect width="241" height="54" fill="url(#pattern0)" />
+                            <defs>
+                                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                    <use xlink:href="#image0_9_77" transform="scale(0.00414938 0.0185185)" />
+                                </pattern>
+                                <image id="image0_9_77" width="241" height="54"
+                                    xlink:href="data:image/png;base64,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" />
+                            </defs>
+                        </svg>
+                    </div>
+                    <nav class="header__menu">
+                        <ul class="header__menu-list">
+                            <li class="header__menu-item">
+                                <div class="header__menu-ellipse"></div>
+                                <a class="header__menu-link" href="#">ABOUT US</a>
+                            </li>
+                            <li class="header__menu-item">
+                                <div class="header__menu-ellipse"></div>
+                                <a class="header__menu-link" href="#">PROJECTS</a>
+                            </li>
+                            <li class="header__menu-item">
+                                <div class="header__menu-ellipse"></div>
+                                <a class="header__menu-link" href="#">NEWS</a>
+                            </li>
+                            <li class="header__menu-item">
+                                <div class="header__menu-ellipse"></div>
+                                <a class="header__menu-link" href="#">CONTACT</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header__social-block">
+                        <ul class="header__social-list">
+                            <li class="header__social-item">
+                                <a class="header__social-link" href="#">
+                                    <svg class="header__social-svg" width="10" height="16" viewBox="0 0 10 16"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.71875 9H6.375V16H3.25V9H0.71875V6.09375H3.25V3.90625C3.25 3.07292 3.40625 2.36458 3.71875 1.78125C4.03125 1.19792 4.46875 0.760417 5.03125 0.46875C5.61458 0.15625 6.28125 0 7.03125 0C7.36458 0 7.71875 0.0208333 8.09375 0.0625C8.46875 0.0833333 8.76042 0.114583 8.96875 0.15625L9.28125 0.1875V2.65625H8.03125C7.44792 2.65625 7.02083 2.8125 6.75 3.125C6.5 3.41667 6.375 3.78125 6.375 4.21875V6.09375H9.15625L8.71875 9Z"
+                                            fill="white" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="header__social-item">
+                                <a class="header__social-link" href="#">
+                                    <svg class="header__social-svg" width="16" height="14" viewBox="0 0 16 14"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M14.3438 3.75C14.3646 3.83333 14.375 3.96875 14.375 4.15625C14.375 5.26042 14.1667 6.36458 13.75 7.46875C13.3333 8.55208 12.7396 9.55208 11.9688 10.4688C11.2188 11.3646 10.2396 12.0938 9.03125 12.6562C7.82292 13.2188 6.48958 13.5 5.03125 13.5C3.19792 13.5 1.52083 13.0104 0 12.0312C0.229167 12.0521 0.489583 12.0625 0.78125 12.0625C2.30208 12.0625 3.66667 11.5938 4.875 10.6562C4.14583 10.6562 3.5 10.4479 2.9375 10.0312C2.39583 9.59375 2.02083 9.05208 1.8125 8.40625C2.02083 8.42708 2.21875 8.4375 2.40625 8.4375C2.69792 8.4375 2.98958 8.40625 3.28125 8.34375C2.78125 8.23958 2.33333 8.03125 1.9375 7.71875C1.54167 7.40625 1.22917 7.03125 1 6.59375C0.770833 6.13542 0.65625 5.64583 0.65625 5.125V5.0625C1.11458 5.33333 1.60417 5.47917 2.125 5.5C1.14583 4.83333 0.65625 3.91667 0.65625 2.75C0.65625 2.16667 0.8125 1.61458 1.125 1.09375C1.9375 2.11458 2.92708 2.92708 4.09375 3.53125C5.28125 4.13542 6.54167 4.46875 7.875 4.53125C7.83333 4.28125 7.8125 4.03125 7.8125 3.78125C7.8125 2.88542 8.125 2.11458 8.75 1.46875C9.39583 0.822917 10.1667 0.5 11.0625 0.5C12.0208 0.5 12.8229 0.84375 13.4688 1.53125C14.2188 1.38542 14.9167 1.125 15.5625 0.75C15.3125 1.52083 14.8333 2.125 14.125 2.5625C14.75 2.47917 15.375 2.30208 16 2.03125C15.5417 2.69792 14.9896 3.27083 14.3438 3.75Z"
+                                            fill="white" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="header__social-item">
+                                <a class="header__social-link" href="#">
+                                    <svg class="header__social-svg" width="15" height="14" viewBox="0 0 15 14"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4.46875 4.46875C5.17708 3.76042 6.03125 3.40625 7.03125 3.40625C8.03125 3.40625 8.875 3.76042 9.5625 4.46875C10.2708 5.15625 10.625 6 10.625 7C10.625 8 10.2708 8.85417 9.5625 9.5625C8.875 10.25 8.03125 10.5938 7.03125 10.5938C6.03125 10.5938 5.17708 10.25 4.46875 9.5625C3.78125 8.85417 3.4375 8 3.4375 7C3.4375 6 3.78125 5.15625 4.46875 4.46875ZM5.375 8.65625C5.83333 9.11458 6.38542 9.34375 7.03125 9.34375C7.67708 9.34375 8.22917 9.11458 8.6875 8.65625C9.14583 8.19792 9.375 7.64583 9.375 7C9.375 6.35417 9.14583 5.80208 8.6875 5.34375C8.22917 4.88542 7.67708 4.65625 7.03125 4.65625C6.38542 4.65625 5.83333 4.88542 5.375 5.34375C4.91667 5.80208 4.6875 6.35417 4.6875 7C4.6875 7.64583 4.91667 8.19792 5.375 8.65625ZM11.3438 2.6875C11.5104 2.83333 11.5938 3.02083 11.5938 3.25C11.5938 3.47917 11.5104 3.67708 11.3438 3.84375C11.1979 4.01042 11.0104 4.09375 10.7812 4.09375C10.5521 4.09375 10.3542 4.01042 10.1875 3.84375C10.0208 3.67708 9.9375 3.47917 9.9375 3.25C9.9375 3.02083 10.0208 2.83333 10.1875 2.6875C10.3542 2.52083 10.5521 2.4375 10.7812 2.4375C11.0104 2.4375 11.1979 2.52083 11.3438 2.6875ZM14 4.125C14.0208 4.6875 14.0312 5.64583 14.0312 7C14.0312 8.35417 14.0208 9.3125 14 9.875C13.9375 11.1458 13.5521 12.1354 12.8438 12.8438C12.1562 13.5312 11.1771 13.8958 9.90625 13.9375C9.34375 13.9792 8.38542 14 7.03125 14C5.67708 14 4.71875 13.9792 4.15625 13.9375C2.88542 13.875 1.90625 13.5 1.21875 12.8125C0.947917 12.5625 0.729167 12.2708 0.5625 11.9375C0.395833 11.6042 0.270833 11.2812 0.1875 10.9688C0.125 10.6562 0.09375 10.2917 0.09375 9.875C0.0520833 9.3125 0.03125 8.35417 0.03125 7C0.03125 5.64583 0.0520833 4.67708 0.09375 4.09375C0.15625 2.84375 0.53125 1.875 1.21875 1.1875C1.90625 0.479167 2.88542 0.09375 4.15625 0.03125C4.71875 0.0104167 5.67708 0 7.03125 0C8.38542 0 9.34375 0.0104167 9.90625 0.03125C11.1771 0.09375 12.1562 0.479167 12.8438 1.1875C13.5521 1.875 13.9375 2.85417 14 4.125ZM12.5 11.125C12.5625 10.9583 12.6146 10.75 12.6562 10.5C12.6979 10.2292 12.7292 9.91667 12.75 9.5625C12.7708 9.1875 12.7812 8.88542 12.7812 8.65625C12.7812 8.42708 12.7812 8.10417 12.7812 7.6875C12.7812 7.27083 12.7812 7.04167 12.7812 7C12.7812 6.9375 12.7812 6.70833 12.7812 6.3125C12.7812 5.89583 12.7812 5.57292 12.7812 5.34375C12.7812 5.11458 12.7708 4.82292 12.75 4.46875C12.7292 4.09375 12.6979 3.78125 12.6562 3.53125C12.6146 3.26042 12.5625 3.04167 12.5 2.875C12.25 2.22917 11.8021 1.78125 11.1562 1.53125C10.9896 1.46875 10.7708 1.41667 10.5 1.375C10.25 1.33333 9.9375 1.30208 9.5625 1.28125C9.20833 1.26042 8.91667 1.25 8.6875 1.25C8.47917 1.25 8.15625 1.25 7.71875 1.25C7.30208 1.25 7.07292 1.25 7.03125 1.25C6.98958 1.25 6.76042 1.25 6.34375 1.25C5.92708 1.25 5.60417 1.25 5.375 1.25C5.14583 1.25 4.84375 1.26042 4.46875 1.28125C4.11458 1.30208 3.80208 1.33333 3.53125 1.375C3.28125 1.41667 3.07292 1.46875 2.90625 1.53125C2.26042 1.78125 1.8125 2.22917 1.5625 2.875C1.5 3.04167 1.44792 3.26042 1.40625 3.53125C1.36458 3.78125 1.33333 4.09375 1.3125 4.46875C1.29167 4.82292 1.28125 5.11458 1.28125 5.34375C1.28125 5.55208 1.28125 5.875 1.28125 6.3125C1.28125 6.72917 1.28125 6.95833 1.28125 7C1.28125 7.08333 1.28125 7.28125 1.28125 7.59375C1.28125 7.88542 1.28125 8.13542 1.28125 8.34375C1.28125 8.53125 1.28125 8.78125 1.28125 9.09375C1.30208 9.40625 1.32292 9.67708 1.34375 9.90625C1.36458 10.1146 1.39583 10.3333 1.4375 10.5625C1.47917 10.7917 1.52083 10.9792 1.5625 11.125C1.83333 11.7708 2.28125 12.2188 2.90625 12.4688C3.07292 12.5312 3.28125 12.5833 3.53125 12.625C3.80208 12.6667 4.11458 12.6979 4.46875 12.7188C4.84375 12.7396 5.13542 12.75 5.34375 12.75C5.57292 12.75 5.89583 12.75 6.3125 12.75C6.75 12.75 6.98958 12.75 7.03125 12.75C7.09375 12.75 7.32292 12.75 7.71875 12.75C8.13542 12.75 8.45833 12.75 8.6875 12.75C8.91667 12.75 9.20833 12.7396 9.5625 12.7188C9.9375 12.6979 10.25 12.6667 10.5 12.625C10.7708 12.5833 10.9896 12.5312 11.1562 12.4688C11.8021 12.1979 12.25 11.75 12.5 11.125Z"
+                                            fill="white" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
     <section class="projects">
         <div class="projects__container container">
             <div class="projects__wrapper">
@@ -29,9 +151,7 @@
                         </div>
                         <img class="projects__image-block-img" src="./assets/images/projects-images/projects-img-1.png"
                             alt="image"></img>
-
                     </div>
-
                     <div class="projects__text-card">
                         <div class="projects__text-block">
                             <span class="projects__text-block-pre-title">ONE WORLD</span>
@@ -40,57 +160,219 @@
                                 accomplished by having the right frame of mind. The truth is, our thoughts are very
                                 powerful.</p>
                             <a class="projects__text-block-button" href="#">
-                                MORE DETAILS
+                                <span class="projects__text-block-button-text"> MORE DETAILS</span>
                             </a>
                             <div class="projects__location-block">
                                 <svg class="projects__location-block-svg" xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 384 512">
-                                    <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
                                     <path
                                         d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z" />
-
                                 </svg>
                                 <span class="projects__location-block-text">New York City, United States - 1776 feet
                                 </span>
                             </div>
                         </div>
                     </div>
-                 
-
-                    <div class="projects__text-card">
+                    <div class="projects__text-card projects__text-card_bottom">
                         <div class="projects__text-block">
                             <span class="projects__text-block-pre-title">ONE WORLD</span>
-                            <h2 class="projects__text-block-title"></h2>
-                            <p class="projects__text-block-text">Increasing prosperity in our lives can be
-                                accomplished by having the right frame of mind. The truth is, our thoughts are very
-                                powerful.</p>
+                            <h2 class="projects__text-block-title">COMMERCE CENTRE</h2>
+                            <p class="projects__text-block-text">Successful businesses have many things in common, today
+                                we’ll look at the big ‘R’ of recognition and how a digital advertising network may help.
+                            </p>
                             <a class="projects__text-block-button" href="#">
-                                MORE DETAILS
+                                <span class="projects__text-block-button-text"> MORE DETAILS</span>
                             </a>
                             <div class="projects__location-block">
                                 <svg class="projects__location-block-svg" xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 384 512">
-                                    <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
                                     <path class="projects__location-block-svg"
                                         d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z" />
-
                                 </svg>
-                                <span class="projects__location-block-text">New York City, United States - 1776 feet
+                                <span class="projects__location-block-text">Hong Kong - 1588 feet
                                 </span>
                             </div>
                         </div>
-
-
                     </div>
-                    <div class="projects__image-block">
-                        <div class="projects__image-block-bg">
+                    <div class="projects__image-block  projects__image-block">
+                        <div class="projects__image-block-bg projects__image-block-bg_fiolet">
                         </div>
-                        <img class="projects__image-block-img"></img>
-
+                        <img class="projects__image-block-img projects__image-block-img_fiolet"
+                            src="./assets/images/projects-images/projects-img-2.png" alt="image"></img>
                     </div>
                 </div>
             </div>
     </section>
+    <section class="latest-news">
+        <div class="latest-news__container container">
+            <img class="latest-news__bg-image" src="assets/images/latest-news/latest-news-bg.png" alt="bg">
+            <div class="latest-news__wrapper">
+              
+                <hr class="latest-news__divider">
+                <h2 class="latest-news__title">LATEST NEWS</h2>
+                <div class="latest-news__slider multiple-items">
+                    <div class="latest-news__slider-block">
+                        <img class="latest-news__slider-img "
+                            src="assets/images/latest-news/latest-news-slider-image-1.png" alt="beautiful image">
+                        <div class="latest-news__slider-text-block">
+                            <h3 class="latest-news__slider-text-title">SEE THE UNMATCHED BEAUTY OF THE GREAT.</h3>
+                            <span class="latest-news__slider-text">Free directories: directories are perfect for
+                                customers that are searching for...</span>
+                        </div>
+                        <div class="latest-news__slider-author-block">
+                            <img class="latest-news__slider-author-photo"
+                                src="assets/images/latest-news/slider-author-photo-1.png" alt="fotka">
+                            <div class="latest-news__slider-author-info">
+                                <h3 class="latest-news__slider-author-name">ALJA BRUN</h3>
+                                <span class="latest-news__slider-author-date">20 Jan 2020</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="latest-news__slider-block">
+                        <img class="latest-news__slider-img "
+                            src="assets/images/latest-news/latest-news-slider-image-2.png" alt="beautiful image">
+                        <div class="latest-news__slider-text-block">
+                            <h3 class="latest-news__slider-text-title">EFFECTIVE ADVERTISING POINTERS.</h3>
+                            <span class="latest-news__slider-text">Having a home based business is a wonderful asset to
+                                your life...</span>
+                        </div>
+                        <div class="latest-news__slider-author-block">
+                            <img class="latest-news__slider-author-photo"
+                                src="assets/images/latest-news/slider-author-photo-2.png" alt="fotka">
+                            <div class="latest-news__slider-author-info">
+                                <h3 class="latest-news__slider-author-name">DOMINIC FREEMAN</h3>
+                                <span class="latest-news__slider-author-date">13 Dec 2019</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="latest-news__slider-block">
+                        <img class="latest-news__slider-img "
+                            src="assets/images/latest-news/latest-news-slider-image-3.png" alt="beautiful image">
+                        <div class="latest-news__slider-text-block">
+                            <h3 class="latest-news__slider-text-title">HYPNOTIZE YOURSELF INTO THE GHOST.</h3>
+                            <span class="latest-news__slider-text">There are many things that are important to catalog
+                                design...</span>
+                        </div>
+                        <div class="latest-news__slider-author-block">
+                            <img class="latest-news__slider-author-photo"
+                                src="assets/images/latest-news/slider-author-photo-3.png" alt="fotka">
+                            <div class="latest-news__slider-author-info">
+                                <h3 class="latest-news__slider-author-name">ALICE WARD</h3>
+                                <span class="latest-news__slider-author-date">30 Nov 2019</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="latest-news__slider-block">
+                        <img class="latest-news__slider-img "
+                            src="assets/images/latest-news/latest-news-slider-image-1.png" alt="beautiful image">
+                        <div class="latest-news__slider-text-block">
+                            <h3 class="latest-news__slider-text-title">SEE THE UNMATCHED BEAUTY OF THE GREAT.</h3>
+                            <span class="latest-news__slider-text">Free directories: directories are perfect for
+                                customers that are searching for...</span>
+                        </div>
+                        <div class="latest-news__slider-author-block">
+                            <img class="latest-news__slider-author-photo"
+                                src="assets/images/latest-news/slider-author-photo-1.png" alt="fotka">
+                            <div class="latest-news__slider-author-info">
+                                <h3 class="latest-news__slider-author-name">ALJA BRUN</h3>
+                                <span class="latest-news__slider-author-date">20 Jan 2020</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="latest-news__slider-block">
+                        <img class="latest-news__slider-img "
+                            src="assets/images/latest-news/latest-news-slider-image-2.png" alt="beautiful image">
+                        <div class="latest-news__slider-text-block">
+                            <h3 class="latest-news__slider-text-title">EFFECTIVE ADVERTISING POINTERS.</h3>
+                            <span class="latest-news__slider-text">Having a home based business is a wonderful asset to
+                                your life...</span>
+                        </div>
+                        <div class="latest-news__slider-author-block">
+                            <img class="latest-news__slider-author-photo"
+                                src="assets/images/latest-news/slider-author-photo-2.png" alt="fotka">
+                            <div class="latest-news__slider-author-info">
+                                <h3 class="latest-news__slider-author-name">DOMINIC FREEMAN</h3>
+                                <span class="latest-news__slider-author-date">13 Dec 2019</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="latest-news__slider-block">
+                        <img class="latest-news__slider-img "
+                            src="assets/images/latest-news/latest-news-slider-image-3.png" alt="beautiful image">
+                        <div class="latest-news__slider-text-block">
+                            <h3 class="latest-news__slider-text-title">HYPNOTIZE YOURSELF INTO THE GHOST.</h3>
+                            <span class="latest-news__slider-text">There are many things that are important to catalog
+                                design...</span>
+                        </div>
+                        <div class="latest-news__slider-author-block">
+                            <img class="latest-news__slider-author-photo"
+                                src="assets/images/latest-news/slider-author-photo-3.png" alt="fotka">
+                            <div class="latest-news__slider-author-info">
+                                <h3 class="latest-news__slider-author-name">ALICE WARD</h3>
+                                <span class="latest-news__slider-author-date">30 Nov 2019</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="gallery">
+        <div class="gallery__container container">
+            <div class="gallery__wrapper">
+                <hr class="gallery__divider">
+                <h2 class="gallery__title">GALLERY</h2>
+                <div class="gallery__block">
+                    <div class="gallery__img-block gallery__img-block_1">
+                        <img class="gallery__block-img " src="assets/images/gallery/gallery-img-1.png" alt="image">
+                    </div>
+                    <div class="gallery__img-block gallery__img-block_2">
+                        <img class="gallery__block-img " src="assets/images/gallery/gallery-img-2.png" alt="image">
+                    </div>
+                    <div class="gallery__img-block gallery__img-block_3">
+                        <img class="gallery__block-img " src="assets/images/gallery/gallery-img-3.png" alt="image"> 
+                    </div>
+                    <div class="gallery__img-block gallery__img-block_4">
+                        <img class="gallery__block-img " src="assets/images/gallery/gallery-img-4.png" alt="image">
+                    </div>
+                    <div class="gallery__img-block gallery__img-block_5">
+                        <img class="gallery__block-img " src="assets/images/gallery/gallery-img-5.png" alt="image">
+                    </div>
+                    
+                   
+                  
+                   
+                   
+                </div>
+                <a class="gallery__button" href="#">
+                    <span class="gallery__button-text">SEE MORE</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <script src="https://kit.fontawesome.com/19bb1591ba.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.single-item').slick({
+                dots: true,
+                vertical: true,
+                verticalSwiping: true,
+                adaptiveHeight: true,
+                arrows: false,
+                autoplay: true,
+                autoplaySpeed: 7000,
+            });
+            $('.multiple-items').slick({
+                dots: true,
+                infinite: true,
+                variableWidth: true,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 7000,
+            });
+        });
+    </script>
 </body>
 
 </html>
