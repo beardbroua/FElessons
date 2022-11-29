@@ -153,6 +153,7 @@ trafficLightButton.classList.add('traffic-button')
 wrapper.append(trafficLightButton)
 trafficLightButton.textContent = 'Next color'
 trafficLightButton.style.padding = '20px 40px'
+trafficLightButton.style.marginBottom = '40px'
 
 for (i = 1; i <= 3; i++) {
     const circle = document.createElement('div')
