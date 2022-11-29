@@ -182,7 +182,7 @@ trafficLightButton.onclick = function() {
     changeLight()
 }
 function changeLight() {
-    circles[activeLight].className = 'circle'
+    circles[activeLight].classList = 'circle'
     activeLight++
 
     if (activeLight > 2) {
