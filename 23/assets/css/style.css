@@ -1,0 +1,267 @@
+body {
+    font-family: "Lato", "Red Hat Display", "sans serif";
+    font-size: 19px;
+    line-height: 32px;
+    color: #000000;
+  }
+  
+  .header__text {
+    max-width: 81.2%;
+    margin: 0 auto;
+    padding: 38px 0;
+    font-family: "Lato";
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.5em;
+    color: #000000;
+  }
+  @media screen and (max-width: 1024px) {
+    .header__text {
+      max-width: 91.1%;
+      margin-bottom: 50px;
+      padding: 18px 0;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .header__text {
+      max-width: 93.7%;
+      margin-bottom: 0;
+    }
+  }
+  
+  .main__container {
+    max-width: 81.2%;
+    margin: 0 auto;
+  }
+  @media screen and (max-width: 1024px) {
+    .main__container {
+      max-width: 91.1%;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .main__container {
+      max-width: 93.7%;
+    }
+  }
+  .main__container .ai__title {
+    margin-bottom: 70px;
+    font-family: "Red Hat Display";
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 64px;
+    letter-spacing: 0.05em;
+    color: #000000;
+  }
+  .main__container .ai__picture__img {
+    max-width: 100%;
+  }
+  @media screen and (max-width: 1024px) {
+    .main__container .ai__title {
+      margin-bottom: 50px;
+      font-size: 33px;
+      line-height: 50px;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .main__container .ai__title {
+      margin-bottom: 40px;
+      font-size: 30px;
+      line-height: 50px;
+    }
+  }
+  .main__container .project {
+    margin: 90px 0;
+  }
+  .main__container .project__title {
+    margin-bottom: 50px;
+    font-family: "Red Hat Display";
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 166%;
+    letter-spacing: 0.1em;
+    color: #000000;
+  }
+  .main__container .project__subtitle {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 48.7%;
+    font-family: "Lato";
+    font-size: 19px;
+    line-height: 32px;
+    letter-spacing: 0.05em;
+    color: #565656;
+  }
+  @media screen and (max-width: 1024px) {
+    .main__container .project {
+      margin: 90px 0 70px;
+    }
+    .main__container .project__subtitle {
+      max-width: 100%;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .main__container .project {
+      margin: 70px 0 70px;
+    }
+    .main__container .project__title {
+      margin-bottom: 40px;
+      font-size: 26px;
+    }
+    .main__container .project__subtitle {
+      font-size: 16px;
+    }
+  }
+  .main__container .section {
+    margin-bottom: 90px;
+  }
+  .main__container .section__title {
+    margin-bottom: 50px;
+    font-family: "Red Hat Display";
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 166%;
+    letter-spacing: 0.1em;
+    color: #000000;
+  }
+  .main__container .section__picture__img {
+    max-width: 100%;
+  }
+  .main__container .section__subtitle {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 100%;
+    margin-top: 20px;
+    font-family: "Lato";
+    font-size: 19px;
+    line-height: 32px;
+    letter-spacing: 0.05em;
+    color: #565656;
+  }
+  @media screen and (max-width: 1024px) {
+    .main__container .section {
+      margin: 70px 0;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .main__container .section__title {
+      margin-bottom: 40px;
+      font-size: 26px;
+    }
+    .main__container .section__subtitle {
+      font-size: 16px;
+    }
+  }
+  
+  .footer {
+    background-color: #F4F4F4;
+    padding: 70px 0 30px;
+  }
+  .footer .block {
+    max-width: 81.2%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .footer .block__contact {
+    max-width: 375px;
+  }
+  .footer .block__contact__title {
+    font-family: "Red Hat Display";
+    font-size: 48px;
+    line-height: 64px;
+    letter-spacing: 0.05em;
+    color: #000000;
+  }
+  .footer .block__contact__tel {
+    display: block;
+    margin: 20px 0 15px;
+    text-decoration: none;
+    font-family: "Lato";
+    font-size: 16px;
+    line-height: 166%;
+    letter-spacing: 0.1em;
+    color: #000000;
+  }
+  .footer .block__contact__mail {
+    display: block;
+    text-decoration: none;
+    font-family: "Lato";
+    font-size: 16px;
+    line-height: 166%;
+    letter-spacing: 0.1em;
+    color: #000000;
+  }
+  .footer .social-icons {
+    display: flex;
+    align-items: center;
+    max-width: 269px;
+  }
+  .footer .social-icons__links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background-color: #F4F4F4;
+    border: 1px solid #565656;
+    transition: 0.5s ease;
+  }
+  .footer .social-icons__links + .social-icons__links {
+    margin-left: 23px;
+  }
+  .footer .social-icons__links__fill {
+    fill: #565656;
+    transition: 0.5s ease;
+  }
+  .footer .social-icons__links:hover {
+    background-color: #565656;
+  }
+  .footer .social-icons__links:hover .social-icons__links__fill {
+    fill: #FFFFFF;
+  }
+  .footer__copyright {
+    margin-top: 20px;
+    text-align: center;
+    font-family: "Lato";
+    font-size: 12px;
+    line-height: 166%;
+    letter-spacing: 0.1em;
+    color: #000000;
+  }
+  @media screen and (max-width: 1024px) {
+    .footer {
+      padding: 50px 0;
+    }
+    .footer .block {
+      flex-direction: column;
+      gap: 40px;
+    }
+    .footer .block__contact {
+      text-align: center;
+    }
+    .footer .block__contact__tel {
+      margin: 20px 0 15px;
+    }
+    .footer__copyright {
+      margin-top: 40px;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .footer .block__contact__title {
+      font-size: 32px;
+      line-height: 42px;
+    }
+    .footer .block__contact__tel {
+      font-size: 18px;
+    }
+    .footer .block__contact__mail {
+      font-size: 18px;
+    }
+    .footer__copyright {
+      font-size: 16px;
+      padding: 0 10px 0;
+    }
+  }/*# sourceMappingURL=main.css.map */
